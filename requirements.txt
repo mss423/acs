@@ -1,0 +1,15 @@
+# Core dependencies for the project
+
+pandas>=1.3.0         # For data manipulation (reading CSVs, DataFrames)
+torch>=1.8.0          # PyTorch backend (required by simpletransformers)
+simpletransformers>=0.63.0 # Main library for model training and prediction
+scikit-learn>=0.24.0  # For evaluation metrics (classification_report, accuracy) and potentially stratified sampling
+numpy>=1.19.0         # Numerical operations (often a dependency)
+
+# Optional, but recommended:
+# tensorboard         # For logging if using default simpletransformers logging
+# wandb               # For logging if using Weights & Biases integration
+
+# Note: Specific versions might be required based on your CUDA version or other libraries.
+# It's recommended to create a virtual environment and run `pip freeze > requirements.txt`
+# after installing the necessary packages to capture exact versions.
