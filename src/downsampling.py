@@ -98,7 +98,7 @@ def apply_downsampling(
     method: str,
     target_size: Optional[int] = None,
     random_seed: Optional[int] = None,
-    label_col: str = 'labels' # Default label column for stratified
+    label_col: str = 'labels', # Default label column for stratified
     **sampling_args
 ) -> pd.DataFrame:
     """
