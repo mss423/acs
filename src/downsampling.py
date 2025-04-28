@@ -6,6 +6,9 @@ from utils import *
 # Optional: Import if your stratified implementation needs it
 # from sklearn.model_selection import train_test_split
 
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
+
 # --- Placeholder Sampling Functions ---
 # These functions define the expected signature for your custom implementations.
 # Replace the body of these functions with your actual downsampling logic.
