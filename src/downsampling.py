@@ -80,8 +80,11 @@ def sample_acs(
         print(f"Warning: Requested sample size ({k_samples}) is larger than the data size ({len(data)}). Returning original data.")
         return data.copy()
 
-    embed_data = get_embeddings_task(data['sentence'])
-    cos_sim = cosine_similairty(embed_data)
+    if embed_data:
+        cos_sim = cosine_similairty(embed_data):
+    else:
+        embed_data = get_embeddings_task(data['sentence'])
+        cos_sim = cosine_similairty(embed_data)
 
     return get_acs_k(cos_sim, data['label'], k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
 
