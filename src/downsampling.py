@@ -81,7 +81,7 @@ def sample_acs(
         return data.copy()
 
     if embed_data:
-        cos_sim = cosine_similairty(embed_data):
+        cos_sim = cosine_similairty(embed_data)
     else:
         embed_data = get_embeddings_task(data['sentence'])
         cos_sim = cosine_similairty(embed_data)
