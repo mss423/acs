@@ -81,7 +81,7 @@ def sample_acs(
         return data.copy()
 
     embed_data = kwargs.get('embed_data', None)
-    if embed_data:
+    if embed_data != None:
         cos_sim = cosine_similairty(embed_data)
     else:
         cos_sim = cosine_similairty(get_embeddings_task(data['sentence']))
