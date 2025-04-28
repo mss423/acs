@@ -32,7 +32,7 @@ def sample_random(
     Raises:
         NotImplementedError: This is a placeholder.
     """
-    print(f"--> Called sample_random (Placeholder) with k_samples={k_samples}, random_state={random_state}")
+    print(f"--> Called sample_random with k_samples={k_samples}, random_state={random_state}")
     # --- USER IMPLEMENTATION START ---
     # Example using pandas built-in sampling:
     if k_samples > len(data):
@@ -70,8 +70,8 @@ def sample_acs(
     sim_lb = kwargs.get('sim_lb', 0)
     max_degree = kwargs.get('max_degree', int((5 * len(data) * coverage) / k_samples))
 
-    print(f"--> Called sample_acs (Placeholder) with k_samples={k_samples}")
-    print(f"    ACS Parameters: coverage={coverage}, sim_thresh={sim_thresh}, max_degree={max_degree}")
+    print(f"--> Called sample_acs with k_samples={k_samples}")
+    print(f"    ACS Parameters: coverage={coverage}, sim_lb={sim_lb}, max_degree={max_degree}")
 
     if k_samples > len(data):
         print(f"Warning: Requested sample size ({k_samples}) is larger than the data size ({len(data)}). Returning original data.")
@@ -99,6 +99,7 @@ def apply_downsampling(
     target_size: Optional[int] = None,
     random_seed: Optional[int] = None,
     label_col: str = 'labels' # Default label column for stratified
+    **sampling_args
 ) -> pd.DataFrame:
     """
     Applies a specified downsampling method to the DataFrame.
@@ -153,7 +154,8 @@ def apply_downsampling(
             data=data,
             k_samples=target_size,
             random_state=random_seed,
-            label_col=label_col # Pass label_col, even if not used by all methods
+            label_col=label_col, # Pass label_col, even if not used by all methods
+            **sampling_args
         )
         print(f"Downsampling complete. Resulting size: {len(downsampled_df)}")
         return downsampled_df
