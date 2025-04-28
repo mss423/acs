@@ -102,7 +102,7 @@ class Dataset:
                  # return False # Uncomment if test data is strictly required
 
             # Calculate number of labels from training data
-            self.num_labels = self.train_df['labels'].nunique()
+            self.num_labels = self.train_df['label'].nunique()
             print(f"Calculated number of unique labels: {self.num_labels}")
 
             print(f"Data loading successful for '{self.name}'.")
