@@ -148,15 +148,17 @@ def apply_downsampling(
     # Get the appropriate sampling function
     sampling_func = SAMPLING_FUNCTIONS[method]
 
+    args_to_pass = {
+        'data': data,
+        'k_samples': target_size,
+        'random_state': random_seed,
+        'label_col': label_col,
+        **sampling_args
+    }
+
     # Call the sampling function
     try:
-        downsampled_df = sampling_func(
-            data=data,
-            k_samples=target_size,
-            random_state=random_seed,
-            label_col=label_col, # Pass label_col, even if not used by all methods
-            **sampling_args
-        )
+        downsampled_df = sampling_func(**args_to_pass)
         print(f"Downsampling complete. Resulting size: {len(downsampled_df)}")
         return downsampled_df
     except NotImplementedError:
