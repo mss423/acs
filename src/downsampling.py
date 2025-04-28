@@ -81,10 +81,12 @@ def sample_acs(
         return data.copy()
 
     embed_data = kwargs.get('embed_data', None)
-    if embed_data != None:
-        cos_sim = cosine_similairty(embed_data)
-    else:
-        cos_sim = cosine_similairty(get_embeddings_task(data['sentence']))
+    try:
+        cos_sim = cosine_similarity(embed_data)
+
+    except Exception as e:
+        print(f"No embedding data found, recomputing...")
+        cos_sim = cosine_similarity(get_embeddings_task(data['sentence']))
 
     return get_acs_k(cos_sim, data['label'], k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
 
