@@ -194,14 +194,20 @@ class Dataset:
             return
 
         # --- Load Training Data ---
-        self.train_df, _ = self._load_single_csv(
+        self.train_df, train_error = self._load_single_csv(
             train_path, text_col, label_col, separator, encoding
         )
+        if train_error:
+            print(train_error)
+            return
 
         # --- Load Test Data ---
-        self.test_df, _ = self._load_single_csv(
+        self.test_df, test_error = self._load_single_csv(
             test_path, text_col, label_col, separator, encoding
         )
+        if test_error:
+            print(test_error)
+            return
 
     def _load_csv_data(self):
         """
