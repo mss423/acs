@@ -70,7 +70,7 @@ def sample_acs(
     sim_lb = kwargs.get('sim_lb', 0)
     max_degree = kwargs.get('max_degree', int((5 * len(data) * coverage) / k_samples))
 
-    print(f"--> Called sample_acs (Placeholder) with k_samples={k_samples}, random_state={random_state}")
+    print(f"--> Called sample_acs (Placeholder) with k_samples={k_samples}")
     print(f"    ACS Parameters: coverage={coverage}, sim_thresh={sim_thresh}, max_degree={max_degree}")
 
     if k_samples > len(data):
