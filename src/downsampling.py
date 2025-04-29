@@ -73,7 +73,7 @@ def sample_score(
         return data.copy()
 
     try:
-        score_file = os.path.join(config.PROCESSED_DATA_DIR, score_method + "_sst2.pkl")
+        score_file = os.path.join(config.PROCESSED_DATA_DIR, "sst2/" + score_method + "_sst2.pkl")
         with open(score_file, "rb") as f:
             score_idx = pickle.load(f)
         return data.iloc[score_idx[:k_samples]]
