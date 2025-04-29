@@ -59,18 +59,35 @@ def build_graph(cos_sim, sim_thresh=0.0, max_degree=None, labels=None):
         # Sort neighbors by similarity in descending order
         neighbors = sorted(enumerate(cos_sim[i]), key=lambda x: x[1], reverse=True)
         
-        added_edges = 0 # Counter for edges added for node i
         for j, similarity in neighbors:
             if j == i:
                 continue
-            if max_degree and added_edges >= max_degree:
-                break  # Exit the inner loop if max_degree is reached
+            # if max_degree and added_edges >= max_degree:
+            #     break  # Exit the inner loop if max_degree is reached
             if similarity >= sim_thresh and (labels is None or labels[i] == labels[j]):
                 G.add_edge(i, j, weight=similarity)
-                added_edges += 1
-        # add self-loop, doesn't count toward max_degree
+
+    # Prune edges
+    for i in range(len(cos_sim)):
+        neighbors = sorted([n for n in G.neighbors(i) if n != i],  # List neighbors, excluding self
+            key=lambda n: G[i][n]['weight'],        # Sort key is the edge weight
+            reverse=True                            # Sort in descending order
+        )
+
+        diff = len(neighbors) - max_degree
+        if diff > 0:
+            last_k_nodes = neighbors[diff:]
+            edges_to_remove = []
+            for j in last_k_nodes:
+                edges_to_remove.append((i, j))
+            G.remove_edges_from(edges_to_remove)
+
+    # add self-loop, doesn't count toward max_degree
+    for i in range(len(cos_sim)):    
         G.add_edge(i, i, weight=1)
     return G
+
+
 
 # Graph sampling algorithms (max-cover)
 def max_cover_sampling(graph, k):
@@ -133,7 +150,7 @@ def binary_similarity_search(data, num_samples, coverage, max_degree=None, epsil
         else:
             sim_lower = sim
         sim = (sim_upper + sim_lower) / 2
-
+    print(f"Completed with similarity threshold = {sim/1000}")
     return sim / 1000, node_graph, samples, current_coverage
 
 
