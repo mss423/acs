@@ -66,16 +66,17 @@ def train(
         print("CUDA available and enabled. Using GPU.")
 
     try:
+        args = config.MODEL_ARGS
+        args['num_train_epochs'] = kwargs.get('num_train_epochs', 3)
+        args['train_batch_size'] = kwargs.get('train_batch_size', 16)
+        args['manual_seed']      = kwargs.get('manual_seed', 42)
+
         model = ClassificationModel(
             model_type=config.MODEL_TYPE,
             model_name=config.MODEL_NAME,
             num_labels=num_labels,
             args=config.MODEL_ARGS,
-            use_cuda=use_cuda, # Use the checked value
-            num_train_epochs=kwargs.get('num_train_epochs', 3),
-            train_batch_size=kwargs.get('train_batch_size', 16),
-            manual_seed=kwargs.get('manual_seed', 42)
-
+            use_cuda=use_cuda # Use the checked value
         )
         print(f"Model Type: {config.MODEL_TYPE}")
         print(f"Model Name: {config.MODEL_NAME}")
