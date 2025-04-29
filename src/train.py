@@ -32,7 +32,8 @@ def set_seed(seed: int):
 def train(
     train_df: pd.DataFrame,
     num_labels: int,
-    eval_df: Optional[pd.DataFrame] = None
+    eval_df: Optional[pd.DataFrame] = None,
+    **kwargs
 ):
     """
     Initializes, trains, and evaluates the simpletransformers model.
@@ -70,7 +71,11 @@ def train(
             model_name=config.MODEL_NAME,
             num_labels=num_labels,
             args=config.MODEL_ARGS,
-            use_cuda=use_cuda # Use the checked value
+            use_cuda=use_cuda, # Use the checked value
+            num_train_epochs=kwargs.get('num_train_epochs', 3),
+            train_batch_size=kwargs.get('train_batch_size', 16),
+            manual_seed=kwargs.get('manual_seed', 42)
+
         )
         print(f"Model Type: {config.MODEL_TYPE}")
         print(f"Model Name: {config.MODEL_NAME}")
@@ -110,6 +115,10 @@ def train(
                 acc=accuracy_score,
                 f1=f1_score
             )
+
+            # Before printing or saving as JSON
+            result = {k: v.item() if isinstance(v, np.int64) else v for k, v in result.items()} 
+       
 
             print("Evaluation Results:")
             print(json.dumps(result, indent=4))

@@ -47,9 +47,9 @@ MODEL_ARGS = {
     "cache_dir": str(CACHE_DIR),         # Convert Path object to string
 
     # --- Training Control ---
-    "num_train_epochs": 3,
+    # "num_train_epochs": 3,
     "learning_rate": 4e-5,
-    "train_batch_size": 16, # Adjust based on GPU memory
+    # "train_batch_size": 16, # Adjust based on GPU memory
     "gradient_accumulation_steps": 1, # Increase if batch size is too large for memory
     # "max_seq_length": 128, # Max token length; adjust based on your data and model limits
 
@@ -76,7 +76,7 @@ MODEL_ARGS = {
     "fp16": False, # Set to True for mixed-precision training (requires compatible GPU/CUDA setup)
 
     # --- Reproducibility ---
-    "manual_seed": 42,
+    # "manual_seed": 42,
     "overwrite_output_dir": True, # Set to False to avoid overwriting previous results
 
     # Add any other simpletransformers args you need
