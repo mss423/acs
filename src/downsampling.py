@@ -3,6 +3,7 @@
 import pandas as pd
 from typing import Optional, Callable, Dict, Any
 from utils import *
+import config
 # Optional: Import if your stratified implementation needs it
 # from sklearn.model_selection import train_test_split
 
@@ -45,6 +46,40 @@ def sample_random(
     # raise NotImplementedError("Random sampling function needs to be implemented by the user.")
     # --- USER IMPLEMENTATION END ---
 
+def sample_score(
+    data: pd.DataFrame,
+    k_samples: int,
+    **kwargs # Allow for extra arguments if needed
+) -> pd.DataFrame:
+    """
+    Performs score-based sampling on the DataFrame.
+
+    Args:
+        data (pd.DataFrame): The input DataFrame.
+        k_samples (int): The exact number of samples to return.
+        **kwargs: Catches unused arguments like label_col.
+
+    Returns:
+        pd.DataFrame: The randomly sampled DataFrame.
+
+    Raises:
+        NotImplementedError: This is a placeholder.
+    """
+    score_method = kwargs.get('score_method', 'aum')
+    print(f"--> Called sample_score with k_samples={k_samples}, score_method={score_method}")
+    if k_samples > len(data):
+        print(f"Warning: Requested sample size ({k_samples}) is larger than the data size ({len(data)}). Returning original data.")
+        return data.copy()
+
+    try:
+        score_file = os.path.join(config.PROCESSED_DATA_DIR, score_method + "_sst2.pkl")
+        with open(score_file, "rb") as f:
+            score_idx = pickle.load(f)
+        return data.iloc[score_idx[:k_samples]]
+    except NotImplementedError:
+        print(f"No such score file found for {score_method}...")
+        raise
+
 
 def sample_acs(
     data: pd.DataFrame,
@@ -52,13 +87,11 @@ def sample_acs(
     **kwargs # Allow for extra arguments if needed
 ) -> pd.DataFrame:
     """
-    Performs random sampling on the DataFrame.
-    (Placeholder - Replace with your implementation)
+    Performs ACS sampling on the DataFrame.
 
     Args:
         data (pd.DataFrame): The input DataFrame.
         k_samples (int): The exact number of samples to return.
-        random_state (Optional[int]): Seed for reproducibility.
         **kwargs: Catches unused arguments like label_col.
          TODO unpack kwargs to get coverage / sim thresh
 
@@ -96,7 +129,8 @@ def sample_acs(
 # The user's custom functions should be added or replace placeholders here.
 SAMPLING_FUNCTIONS: Dict[str, Callable[..., pd.DataFrame]] = {
     "random": sample_random,
-    "acs": sample_acs
+    "acs": sample_acs,
+    "score": sample_score
     # "custom": sample_custom_method,
 }
 
