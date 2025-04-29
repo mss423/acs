@@ -88,7 +88,8 @@ def sample_acs(
         print(f"No embedding data found, recomputing...")
         cos_sim = cosine_similarity(get_embeddings_task(data['sentence']))
 
-    return get_acs_k(cos_sim, data['label'], k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
+    selected_samples = get_acs_k(cos_sim, data['label'], k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
+    return data.iloc[selected_samples]
 
 
 # --- Mapping from method names to functions ---

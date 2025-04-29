@@ -138,6 +138,7 @@ def train(
         print("\nSkipping final evaluation as no eval_df was provided to the train function.")
 
     print("\n--- Training Function Finished ---")
+    return result
 
 
 # --- Main Execution Block ---
