@@ -68,19 +68,21 @@ def build_graph(cos_sim, sim_thresh=0.0, max_degree=None, labels=None):
                 G.add_edge(i, j, weight=similarity)
 
     # Prune edges
-    for i in range(len(cos_sim)):
-        neighbors = sorted([n for n in G.neighbors(i) if n != i],  # List neighbors, excluding self
-            key=lambda n: G[i][n]['weight'],        # Sort key is the edge weight
-            reverse=True                            # Sort in descending order
-        )
+    if max_degree is not None:
+        for i in range(len(cos_sim)):
+            if G.neighbors(i) is None: continue
+            neighbors = sorted([n for n in G.neighbors(i) if n != i],  # List neighbors, excluding self
+                key=lambda n: G[i][n]['weight'],        # Sort key is the edge weight
+                reverse=True                            # Sort in descending order
+            )
 
-        diff = len(neighbors) - max_degree
-        if diff > 0:
-            last_k_nodes = neighbors[diff:]
-            edges_to_remove = []
-            for j in last_k_nodes:
-                edges_to_remove.append((i, j))
-            G.remove_edges_from(edges_to_remove)
+            diff = len(neighbors) - max_degree
+            if diff > 0:
+                last_k_nodes = neighbors[diff:]
+                edges_to_remove = []
+                for j in last_k_nodes:
+                    edges_to_remove.append((i, j))
+                G.remove_edges_from(edges_to_remove)
 
     # add self-loop, doesn't count toward max_degree
     for i in range(len(cos_sim)):    
