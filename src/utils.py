@@ -33,7 +33,6 @@ def get_embeddings_task(texts, task='CLUSTERING', batch_size=32):
 
 # ACS Execution
 def get_acs_k(cos_sim, labels, K, max_degree=None, sim_lb=707, coverage=0.9):
-    coverage = coverage # Coverage fixed at 0.9
     _, _, selected_samples, _ = binary_similarity_search(cos_sim, K, coverage, labels=labels, max_degree=max_degree, sim_lb=sim_lb)
     return selected_samples
 
@@ -149,6 +148,8 @@ def binary_similarity_search(data, num_samples, coverage, max_degree=None, epsil
 
         if current_coverage < coverage:
             sim_upper = sim
+        elif coverage == 1.0 and current_coverage == 1.0 and len(samples) < num_samples:
+            sim_lower = sim # Handling tricky case
         else:
             sim_lower = sim
         sim = (sim_upper + sim_lower) / 2
