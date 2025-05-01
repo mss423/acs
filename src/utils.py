@@ -150,10 +150,11 @@ def binary_similarity_search(data, num_samples, coverage, max_degree=None, epsil
             sim_upper = sim
         elif coverage == 1.0 and len(samples) < num_samples:
             sim_lower = sim # Handling tricky case
+            current_coverage = 0
         else:
             sim_lower = sim
         sim = (sim_upper + sim_lower) / 2
-        print(rem_nodes) # Debugging
+
     print(f"Completed with similarity threshold = {sim/1000}")
     return sim / 1000, node_graph, samples, current_coverage
 
