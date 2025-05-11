@@ -306,7 +306,7 @@ class Dataset:
         self.train_df, train_error = self._process_fewrel_data(train_path)
 
         # --- Load Test Data ---
-        self.train_df, train_error = self._process_fewrel_data(test_path)
+        self.train_df, test_error = self._process_fewrel_data(test_path)
 
         if train_error:
             print(train_error)
