@@ -425,7 +425,7 @@ class Dataset:
         df.columns = ["sentence", "label"]
         df = df.sample(frac=1)  # Shuffle
         print(dict(path=path, data=df.shape, unique_labels=len(set(df["label"].tolist()))))
-        return df, _
+        return df, None
 
 
 def linearize_input(text, head, tail):
