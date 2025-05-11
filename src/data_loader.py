@@ -287,7 +287,7 @@ class Dataset:
             return
 
     def _load_fewrel_data(self):
-        print("Loading SST2 data...")
+        print("Loading FewRel data...")
         # --- Get config parameters ---
         train_path  = os.path.join(self.config.get('train_path'), 'train.json')
         test_path   = os.path.join(self.config.get('test_path'), 'test.json') # Test path is optional
@@ -302,12 +302,10 @@ class Dataset:
             return
 
         # --- Load Training Data --- #
-        self.train_df, train_error = self._process_fewrel_data(
-            train_path)
-        
+        self.train_df, train_error = self._process_fewrel_data(train_path)
+
         # --- Load Test Data ---
-        self.train_df, train_error = self._process_fewrel_data(
-            test_path)
+        self.train_df, train_error = self._process_fewrel_data(test_path)
 
         if train_error:
             print(train_error)
@@ -368,7 +366,7 @@ class Dataset:
 
 
     # ------ CrossNER Data Functions ------ #
-    def load_crossner_sentences(path):
+    def load_crossner_sentences(self, path):
         with open(path, 'r') as f:
             lines = f.readlines()
 
@@ -390,7 +388,7 @@ class Dataset:
 
         return pd.DataFrame({"sentence": sentences})
 
-    def load_crossner_train(path, dev=False):
+    def load_crossner_train(self, path, dev=False):
         with open(path, 'r') as f:
             lines = f.readlines()
 
@@ -411,7 +409,7 @@ class Dataset:
     # ------ FewRel Data Functions ------- #
 
 
-    def _process_fewrel_data(path):
+    def _process_fewrel_data(self, path):
         pairs = []
         with open(path) as f:
             raw = json.load(f)
