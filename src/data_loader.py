@@ -3,6 +3,7 @@
 import pandas as pd
 import os
 from typing import Optional, Tuple, Dict, Any
+import json
 
 FEWREL_LABELS = [
     "P1001",
