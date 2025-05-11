@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: operator
+Relation Definition: person, profession, or organization that operates the equipment, facility, or service; use country for diplomatic missions
+Relation: operator
+Head Entity: South Dakota Cultural Heritage Center; Tail Entity: South Dakota State Historical Society
+Head Entity:

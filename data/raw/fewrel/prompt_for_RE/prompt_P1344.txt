@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: participant of
+Relation Definition: event a person or an organization was/is a participant in, inverse of P710 or P1923
+Relation: participant of
+Head Entity: Jens Bojsen - Møller; Tail Entity: 1992 Summer Olympics
+Head Entity:

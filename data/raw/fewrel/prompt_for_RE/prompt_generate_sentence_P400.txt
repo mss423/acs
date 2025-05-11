@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: platform
+Head Entity: Sabre Wulf; Tail Entity: Commodore 64
+Sentence: For instance , Firebird created the Commodore 64 releases of " Sabre Wulf " and " Underwurlde " .
+Relation: platform
+Head Entity1: ; Tail Entity2:
+Sentence:

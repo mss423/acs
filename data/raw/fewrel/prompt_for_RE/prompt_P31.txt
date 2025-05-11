@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: instance of
+Relation Definition: that class of which this subject is a particular example and member (subject typically an individual member with a proper name label); different from P279; using this property as a qualifier is deprecated—use P2868 or P3831 instead
+Relation: instance of
+Head Entity: Logic Pro; Tail Entity: digital audio workstation
+Head Entity:

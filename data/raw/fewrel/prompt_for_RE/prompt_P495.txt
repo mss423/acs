@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: country of origin
+Relation Definition: country of origin of this item (creative work, food, phrase, product, etc.)
+Relation: country of origin
+Head Entity: Spin Doctors; Tail Entity: American
+Head Entity:

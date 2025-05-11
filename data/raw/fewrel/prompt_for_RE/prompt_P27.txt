@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: country of citizenship
+Relation Definition: the object is a country that recognizes the subject as its citizen
+Relation: country of citizenship
+Head Entity: Aleksi Mäkelä; Tail Entity: Finnish
+Head Entity:

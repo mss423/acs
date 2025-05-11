@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: performer
+Head Entity: Sole Survivor; Tail Entity: Helloween
+Sentence: The song has been recorded by the German power metal band Helloween as a track on their 1995 CD single " Sole Survivor " .
+Relation: performer
+Head Entity1: ; Tail Entity2:
+Sentence:

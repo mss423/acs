@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: original network
+Relation Definition: network(s) the radio or television show was originally aired on, not including later re-runs or additional syndication
+Relation: original network
+Head Entity: K - Ville; Tail Entity: FOX
+Head Entity:

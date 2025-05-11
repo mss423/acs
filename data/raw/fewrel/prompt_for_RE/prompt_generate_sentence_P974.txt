@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: tributary
+Head Entity: Hudson River; Tail Entity: Schroon River
+Sentence: The east side of Grace Peak drains into Lindsay Brook , thence into the Schroon River , the Hudson River , and into New York Bay .
+Relation: tributary
+Head Entity1: ; Tail Entity2:
+Sentence:

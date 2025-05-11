@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: owned by
+Head Entity: Babylon Branch; Tail Entity: Long Island Rail Road
+Sentence: Amityville is the westernmost station on the Babylon Branch of the Long Island Rail Road in Suffolk County , New York .
+Relation: owned by
+Head Entity1: ; Tail Entity2:
+Sentence:

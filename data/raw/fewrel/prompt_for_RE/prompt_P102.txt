@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: member of political party
+Relation Definition: the political party of which this politician is or has been a member
+Relation: member of political party
+Head Entity: Diane Ablonczy; Tail Entity: Conservative Party
+Head Entity:

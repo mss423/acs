@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: instance of
+Head Entity: Logic Pro; Tail Entity: digital audio workstation
+Sentence: Logic Express was a " light " version of Logic Pro , a MIDI sequencer and digital audio workstation software application maintained by Apple that runs on the Mac OS X platform .
+Relation: instance of
+Head Entity1: ; Tail Entity2:
+Sentence:

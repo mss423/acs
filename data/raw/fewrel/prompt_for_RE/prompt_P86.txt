@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: composer
+Relation Definition: person(s) who wrote the music [for lyricist, use "lyrics by" (P676)]
+Relation: composer
+Head Entity: Hum Dil De Chuke Sanam; Tail Entity: Ismail Darbar
+Head Entity:

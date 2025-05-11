@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: applies to jurisdiction
+Head Entity: European Court of Justice; Tail Entity: European Union
+Sentence: In April 2014 , the European Court of Justice ruled that the European Union 's Data Retention Directive was invalid .
+Relation: applies to jurisdiction
+Head Entity1: ; Tail Entity2:
+Sentence:

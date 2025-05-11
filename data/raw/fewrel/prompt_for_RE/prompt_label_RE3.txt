@@ -1,0 +1,67 @@
+Identify the relation between the head entity and the tail entity in the given sentence.
+Relation: place served by transport hub; mountain range; religion; participating team; contains administrative territorial entity; head of government; country of citizenship; original network; heritage designation; performer; participant of; position held; has part; location of formation; located on terrain feature; architect; country of origin; publisher; director; father; developer; military branch; mouth of the watercourse; nominated for; movement; successful candidate; followed by; manufacturer; instance of; after a work by; member of political party; licensed to broadcast to; headquarters location; sibling; instrument; country; occupation; residence; work location; subsidiary; participant; operator; characters; occupant; genre; operating system; owned by; platform; tributary; winner; said to be the same as; composer; league; record label; distributor; screenwriter; sports season of league or competition; taxon rank; location; field of work; language of work or name; applies to jurisdiction; notable work; located in the administrative territorial entity;
+#####
+Merpati flight 106 departed Jakarta ( CGK ) on a domestic flight to [Tanjung Pandan TAIL ENTITY] ( [TJQ HEAD ENTITY] ) . Relation: place served by transport hub
+It is approximately 8 km away from [Mount Korbu HEAD ENTITY] , the tallest mountain of the [Titiwangsa Mountains TAIL ENTITY] . Relation: mountain range
+In 1689 , Konstanty was one of the judges who sentenced [Kazimierz Łyszczyński HEAD ENTITY] to death for [atheism TAIL ENTITY] . Relation: religion
+On 26 August 2016 , in his [Bundesliga HEAD ENTITY] debut , Bayern defeated [Werder Bremen TAIL ENTITY] 6–0 . Relation: participating team
+The sailor was rescued by [Saudi Arabia HEAD ENTITY]n border guards in the Red Sea and taken to [Jizan Province TAIL ENTITY] of [Saudi Arabia HEAD ENTITY] . Relation: contains administrative territorial entity
+[Chester Alan Arthur TAIL ENTITY] , 21st President of the [United States HEAD ENTITY] , died of this disease , November 18 , 1886 Relation: head of government
+Vares : Private Eye ( ) is a 2004 [Finnish TAIL ENTITY] crime film directed by [Aleksi Mäkelä HEAD ENTITY] . Relation: country of citizenship
+first aired against fellow freshmen show " [K - Ville HEAD ENTITY] " on [FOX TAIL ENTITY] . Relation: original network
+The property , including Drummers ' Building and sidewalk , was added to the [National Register of Historic Places TAIL ENTITY] on June 17 , 1982 , as " [Jaeckel Hotel HEAD ENTITY] " . Relation: heritage designation
+The song has been recorded by the German power metal band [Helloween TAIL ENTITY] as a track on their 1995 CD single " [Sole Survivor HEAD ENTITY] " . Relation: performer
+At the [1992 Summer Olympics TAIL ENTITY] in Barcelona he received a bronze medal in the Flying Dutchman , together with his cousin [Jens Bojsen - Møller HEAD ENTITY] . Relation: participant of
+[Mitchell Hepburn HEAD ENTITY] , the [Premier of Ontario TAIL ENTITY] and John B. McNair , the Premier of New Brunswick both demanded overseas conscription in speeches attacking King . Relation: position held
+In " [The Telling TAIL ENTITY] " , Terra 's incorporation into the [Ekumen HEAD ENTITY] is briefly explained . Relation: has part
+Similar movements concurrently formed in many other countries , leading to the formation , at a 1947 meeting in [Montreux TAIL ENTITY] , Switzerland , of a global coalition , now called [World Federalist Movement HEAD ENTITY] . Relation: location of formation
+The island lies between [Kanatadika HEAD ENTITY] on [Euboea TAIL ENTITY] and the mainland near Achilleio , Magnesia . Relation: located on terrain feature
+Pythius and [Satyros TAIL ENTITY] were the co - designers of the great [Mausoleum at Halicarnassus HEAD ENTITY] on the Aegean Sea opposite Greece , with Pythius being credited with the great marble quadriga which surmounted the mausoleum . Relation: architect
+Turn It Upside Down is the second studio album and fourth release overall by [American TAIL ENTITY] rock band [Spin Doctors HEAD ENTITY] , released in 1994 . Relation: country of origin
+Financial and contractual problems prevented agreement and , instead , ESP contracted with [Elsevier TAIL ENTITY] leading to the publication of the [Journal of Photochemistry and Photobiology HEAD ENTITY] in 1987 . Relation: publisher
+Cheryl Barnes is a singer who starred in [Miloš Forman TAIL ENTITY] ’s 1979 film adaptation of " [Hair HEAD ENTITY] " as the mother of Hud ’s little son . Relation: director
+Matilda II died five years later , in 1262 , and her husband [Odo , Count of Nevers TAIL ENTITY] divided the three counties between her daughters Yolande , [Margaret HEAD ENTITY] and Adelaide . Relation: father
+" [Resonance of Fate HEAD ENTITY] " marked the first collaboration between [tri - Ace TAIL ENTITY] and Sega — most of [tri - Ace TAIL ENTITY] 's previous games had been published by Square Enix . Relation: developer
+Among the students at the Nagasaki Naval Training Center was [Enomoto Takeaki HEAD ENTITY] , one of the founders of the [Imperial Japanese Navy TAIL ENTITY] . Relation: military branch
+The Peel watershed drains 14 % of the Yukon Territory Canada and flows into the [Beaufort Sea TAIL ENTITY] via the Peel and then [Mackenzie HEAD ENTITY] Rivers . Relation: mouth of the watercourse
+" [A Star is Born HEAD ENTITY] " was the first color film to receive a [Best Picture TAIL ENTITY] nomination . Relation: nominated for
+The large workshops of [Peter Paul Rubens HEAD ENTITY] and Jacob Jordaens , and the influence of Anthony van Dyck , made Antwerp the center of the [Flemish Baroque TAIL ENTITY] . Relation: movement
+Christine Branstad returned for a fifth term as First Lady in 2010 following [Terry Branstad TAIL ENTITY] 's [election in 2010 HEAD ENTITY] . Relation: successful candidate
+It is the fourth installment in the " Predator " film series , set to take place between " [Predator 2 HEAD ENTITY] " ( 1990 ) and " [Predators TAIL ENTITY] " ( 2010 ) . Relation: followed by
+Notable exhibitors included the company [iRobot TAIL ENTITY] , creators of [Roomba HEAD ENTITY] , and NASA . Relation: manufacturer
+Logic Express was a " light " version of [Logic Pro HEAD ENTITY] , a MIDI sequencer and [digital audio workstation TAIL ENTITY] software application maintained by Apple that runs on the Mac OS X platform . Relation: instance of
+The [Bread of Those Early Years HEAD ENTITY] ( ) is a 1955 novel by the West German writer [Heinrich Böll TAIL ENTITY] . Relation: after a work by
+Rempel became involved in politics with the riding association of [Diane Ablonczy HEAD ENTITY] , and she later served as president of the [Conservative Party TAIL ENTITY] riding executive for her riding of Calgary — Nose Hill . Relation: member of political party
+In November 2015 , WSJO added the programming of [WPGG HEAD ENTITY] 1450 [Atlantic City TAIL ENTITY] on HD2 , and WJPH / WJPG 's Praise FM on HD3 . Relation: licensed to broadcast to
+It can be viewed at the [Museo del Novecento HEAD ENTITY] in the [Arengario palace TAIL ENTITY] near Duomo square in the centre of Milan . Relation: headquarters location
+His family met [William HEAD ENTITY] Thackeray and Charles Dickens on their American tours , and James even remembered Thackeray mock - scolding his sister [Alice TAIL ENTITY] for her crinoline dress : " Crinoline ? Relation: sibling
+He began studying piano at an early age , but switched to [saxophone TAIL ENTITY] in middle school after hearing a record by [Stan Getz HEAD ENTITY] . Relation: instrument
+[Belgium TAIL ENTITY] 's highest point is the [Signal de Botrange HEAD ENTITY] at 694 meters above the sea level . Relation: country
+Cunlhat was the birthplace of [Maurice Pialat HEAD ENTITY] ( 1925–2003 ) , [film director TAIL ENTITY] and actor . Relation: occupation
+Wong Fei - hung plans to return to [Foshan TAIL ENTITY] with his father [Wong Kei - ying HEAD ENTITY] and apprentices Leung Foon and Clubfoot . Relation: residence
+Shortly after his arrival in [Marrakesh TAIL ENTITY] , [Ibn Tumart HEAD ENTITY] is said to have successfully sought out the Almoravid ruler Ali ibn Yusuf at a local mosque . Relation: work location
+He is head of the " [VIB TAIL ENTITY] Department of Molecular Biology , [KU Leuven HEAD ENTITY] " . Relation: subsidiary
+In 2007 Yurii Barybin was invited to hold a technical director and production manager positions for [Tina Karol TAIL ENTITY] - singer , songwriter , [Eurovision Song Contest 2006 HEAD ENTITY] Ukrainian representative . Relation: participant
+The [South Dakota Cultural Heritage Center HEAD ENTITY] in Pierre , South Dakota is the headquarters of the [South Dakota State Historical Society TAIL ENTITY] . Relation: operator
+Actress Sally Hawkins was asked to play " [Persuasion HEAD ENTITY] 's " protagonist [Anne Elliot TAIL ENTITY] . Relation: characters
+The ECHL 's [Kansas City Mavericks TAIL ENTITY] currently play at the suburban [Silverstein Eye Centers Arena HEAD ENTITY] in Independence , Missouri . Relation: occupant
+[Trailer Bride HEAD ENTITY] was a Chapel Hill , North Carolina - based [alternative country TAIL ENTITY] rock band signed to Bloodshot Records . Relation: genre
+This has caused the development of new digital typesetting techniques such as OpenType , and the incorporation of ligature support into the text display systems of [macOS TAIL ENTITY] , Windows and applications like [Microsoft Office HEAD ENTITY] . Relation: operating system
+Amityville is the westernmost station on the [Babylon Branch HEAD ENTITY] of the [Long Island Rail Road TAIL ENTITY] in Suffolk County , New York . Relation: owned by
+For instance , Firebird created the [Commodore 64 TAIL ENTITY] releases of " [Sabre Wulf HEAD ENTITY] " and " Underwurlde " . Relation: platform
+The east side of Grace Peak drains into Lindsay Brook , thence into the [Schroon River TAIL ENTITY] , the [Hudson River HEAD ENTITY] , and into New York Bay . Relation: tributary
+In 1961 he guided [Fiorentina TAIL ENTITY] to victory in [the first ever HEAD ENTITY] European Cup Winners ' Cup , beating Rangers 4–1 on aggregate in the final . Relation: winner
+While he was clear about the integrity of the overall family , he was less confident about his organization of " Salvia " , the largest genus in [Labiatae TAIL ENTITY] ( also called [Lamiaceae HEAD ENTITY] ) . Relation: said to be the same as
+Rahman made a clean sweep of all the music awards that year except the National Film Award for Best Music Direction which went to [Ismail Darbar TAIL ENTITY] for " [Hum Dil De Chuke Sanam HEAD ENTITY] " . Relation: composer
+He made his debut in the [Russian Professional Football League TAIL ENTITY] for FC Lokomotiv - Kazanka Moscow on 3 August 2017 in a game against [FC Torpedo Vladimir HEAD ENTITY] . Relation: league
+The Very Air We Breathe is the first album from Pop punk / Electronica band [Driver side impact HEAD ENTITY] released in 2007 under [Victory Records TAIL ENTITY] . Relation: record label
+Following " [The Painted Hills HEAD ENTITY] " in 1951 , [MGM TAIL ENTITY] executives felt Lassie had run her course and planned no future films featuring the character . Relation: distributor
+" [Citizen Khan HEAD ENTITY] " is written by [Anil Gupta TAIL ENTITY] and Richard Pinto ( " The Kumars at No 42 " , " Goodness Gracious Me " ) with Adil Ray . Relation: screenwriter
+The [1959 HEAD ENTITY] Los Angeles Rams season was the team 's 22nd year with the [National Football League TAIL ENTITY] and the 14th season in Los Angeles . Relation: sports season of league or competition
+Polietes is a genus from the fly [family TAIL ENTITY] [Muscidae HEAD ENTITY] . Relation: taxon rank
+Links Verlag , 2008 . , p. 469 In another incident , on 27 September , Cham militias arrested 53 Greek citizens in [Paramythia TAIL ENTITY] and [executed 49 of them HEAD ENTITY] two days later . Relation: location
+It was first described by German [botanist TAIL ENTITY] [Conrad Moench HEAD ENTITY] . Relation: field of work
+[Japanese TAIL ENTITY] video sharing website [Niconico HEAD ENTITY] played a fundamental role in the recognition and popularity of the software . Relation: language of work or name
+In April 2014 , the [European Court of Justice HEAD ENTITY] ruled that the [European Union TAIL ENTITY] 's Data Retention Directive was invalid . Relation: applies to jurisdiction
+[Devaki Nandan Khatri HEAD ENTITY] , who at the beginning of the 20th century wrote novels including " [Chandrakanta TAIL ENTITY] " and " [Chandrakanta TAIL ENTITY] Santati " , was born in Muzaffarpur , Bihar . Relation: notable work
+Downing House is a historic home located at [Memphis HEAD ENTITY] , [Scotland County , Missouri TAIL ENTITY] . Relation: located in the administrative territorial entity

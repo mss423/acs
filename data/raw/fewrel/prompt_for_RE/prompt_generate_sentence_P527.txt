@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: has part
+Head Entity: Ekumen; Tail Entity: The Telling
+Sentence: In " The Telling " , Terra 's incorporation into the Ekumen is briefly explained .
+Relation: has part
+Head Entity1: ; Tail Entity2:
+Sentence:

@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: sibling
+Head Entity: William; Tail Entity: Alice
+Sentence: His family met William Thackeray and Charles Dickens on their American tours , and James even remembered Thackeray mock - scolding his sister Alice for her crinoline dress : " Crinoline ?
+Relation: sibling
+Head Entity1: ; Tail Entity2:
+Sentence:

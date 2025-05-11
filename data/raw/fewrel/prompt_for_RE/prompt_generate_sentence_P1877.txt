@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: after a work by
+Head Entity: Bread of Those Early Years; Tail Entity: Heinrich Böll
+Sentence: The Bread of Those Early Years ( ) is a 1955 novel by the West German writer Heinrich Böll .
+Relation: after a work by
+Head Entity1: ; Tail Entity2:
+Sentence:

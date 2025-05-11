@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: participating team
+Head Entity: Bundesliga; Tail Entity: Werder Bremen
+Sentence: On 26 August 2016 , in his Bundesliga debut , Bayern defeated Werder Bremen 6–0 .
+Relation: participating team
+Head Entity1: ; Tail Entity2:
+Sentence:

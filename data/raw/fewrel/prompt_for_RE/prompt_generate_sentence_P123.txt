@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: publisher
+Head Entity: Journal of Photochemistry and Photobiology; Tail Entity: Elsevier
+Sentence: Financial and contractual problems prevented agreement and , instead , ESP contracted with Elsevier leading to the publication of the Journal of Photochemistry and Photobiology in 1987 .
+Relation: publisher
+Head Entity1: ; Tail Entity2:
+Sentence:

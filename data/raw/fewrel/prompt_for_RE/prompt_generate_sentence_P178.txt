@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: developer
+Head Entity: Resonance of Fate; Tail Entity: tri - Ace
+Sentence: " Resonance of Fate " marked the first collaboration between tri - Ace and Sega — most of tri - Ace 's previous games had been published by Square Enix .
+Relation: developer
+Head Entity1: ; Tail Entity2:
+Sentence:

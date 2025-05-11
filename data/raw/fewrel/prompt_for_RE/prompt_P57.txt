@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: director
+Relation Definition: director(s) of film, TV-series, stageplay, video game or similar
+Relation: director
+Head Entity: Hair; Tail Entity: Miloš Forman
+Head Entity:

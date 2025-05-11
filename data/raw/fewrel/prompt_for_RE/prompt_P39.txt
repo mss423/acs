@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: position held
+Relation Definition: subject currently or formerly holds the object position or public office
+Relation: position held
+Head Entity: Mitchell Hepburn; Tail Entity: Premier of Ontario
+Head Entity:

@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: characters
+Head Entity: Persuasion; Tail Entity: Anne Elliot
+Sentence: Actress Sally Hawkins was asked to play " Persuasion 's " protagonist Anne Elliot .
+Relation: characters
+Head Entity1: ; Tail Entity2:
+Sentence:

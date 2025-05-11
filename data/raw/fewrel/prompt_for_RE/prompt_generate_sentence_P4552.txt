@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: mountain range
+Head Entity: Mount Korbu; Tail Entity: Titiwangsa Mountains
+Sentence: It is approximately 8 km away from Mount Korbu , the tallest mountain of the Titiwangsa Mountains .
+Relation: mountain range
+Head Entity1: ; Tail Entity2:
+Sentence:

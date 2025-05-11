@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: manufacturer
+Relation Definition: manufacturer or producer of this product
+Relation: manufacturer
+Head Entity: Roomba; Tail Entity: iRobot
+Head Entity:

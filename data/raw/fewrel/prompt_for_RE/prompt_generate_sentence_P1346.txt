@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: winner
+Head Entity: the first ever; Tail Entity: Fiorentina
+Sentence: In 1961 he guided Fiorentina to victory in the first ever European Cup Winners ' Cup , beating Rangers 4–1 on aggregate in the final .
+Relation: winner
+Head Entity1: ; Tail Entity2:
+Sentence:

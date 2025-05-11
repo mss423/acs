@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: location
+Relation Definition: location of the item, physical object or event is within. In case of an administrative entity use P131. In case of a distinct terrain feature use P706.
+Relation: location
+Head Entity: executed 49 of them; Tail Entity: Paramythia
+Head Entity:

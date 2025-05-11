@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: participating team
+Relation Definition: Like 'Participant' (P710) but for teams. For an event like a cycle race or a football match you can use this property to list the teams and P710 to list the individuals (with 'member of sports team' (P54) as a qualifier for the individuals)
+Relation: participating team
+Head Entity: Bundesliga; Tail Entity: Werder Bremen
+Head Entity:

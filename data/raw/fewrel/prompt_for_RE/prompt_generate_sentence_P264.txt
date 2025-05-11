@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: record label
+Head Entity: Driver side impact; Tail Entity: Victory Records
+Sentence: The Very Air We Breathe is the first album from Pop punk / Electronica band Driver side impact released in 2007 under Victory Records .
+Relation: record label
+Head Entity1: ; Tail Entity2:
+Sentence:

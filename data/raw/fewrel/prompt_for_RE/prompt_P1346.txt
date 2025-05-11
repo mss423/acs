@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: winner
+Relation Definition: winner of an event - do not use for awards (use P166 instead), nor for wars or battles
+Relation: winner
+Head Entity: the first ever; Tail Entity: Fiorentina
+Head Entity:

@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: record label
+Relation Definition: brand and trademark associated with the marketing of subject music recordings and music videos
+Relation: record label
+Head Entity: Driver side impact; Tail Entity: Victory Records
+Head Entity:

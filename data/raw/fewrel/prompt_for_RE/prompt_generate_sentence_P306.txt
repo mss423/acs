@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: operating system
+Head Entity: Microsoft Office; Tail Entity: macOS
+Sentence: This has caused the development of new digital typesetting techniques such as OpenType , and the incorporation of ligature support into the text display systems of macOS , Windows and applications like Microsoft Office .
+Relation: operating system
+Head Entity1: ; Tail Entity2:
+Sentence:

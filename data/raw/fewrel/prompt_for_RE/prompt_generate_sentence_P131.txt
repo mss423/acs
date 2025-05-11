@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: located in the administrative territorial entity
+Head Entity: Memphis; Tail Entity: Scotland County , Missouri
+Sentence: Downing House is a historic home located at Memphis , Scotland County , Missouri .
+Relation: located in the administrative territorial entity
+Head Entity1: ; Tail Entity2:
+Sentence:

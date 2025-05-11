@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: work location
+Head Entity: Ibn Tumart; Tail Entity: Marrakesh
+Sentence: Shortly after his arrival in Marrakesh , Ibn Tumart is said to have successfully sought out the Almoravid ruler Ali ibn Yusuf at a local mosque .
+Relation: work location
+Head Entity1: ; Tail Entity2:
+Sentence:

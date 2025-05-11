@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: genre
+Head Entity: Trailer Bride; Tail Entity: alternative country
+Sentence: Trailer Bride was a Chapel Hill , North Carolina - based alternative country rock band signed to Bloodshot Records .
+Relation: genre
+Head Entity1: ; Tail Entity2:
+Sentence:

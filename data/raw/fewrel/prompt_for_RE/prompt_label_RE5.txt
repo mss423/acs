@@ -1,0 +1,160 @@
+Relation: place served by transport hub
+Relation Definition: territorial entity or entities served by this transport hub (airport, train station, etc.)
+Relation: mountain range
+Relation Definition: range or subrange to which the geographical item belongs
+Relation: religion
+Relation Definition: religion of a person, organization or religious building, or associated with this subject
+Relation: participating team
+Relation Definition: Like 'Participant' (P710) but for teams. For an event like a cycle race or a football match you can use this property to list the teams and P710 to list the individuals (with 'member of sports team' (P54) as a qualifier for the individuals)
+Relation: contains administrative territorial entity
+Relation Definition: (list of) direct subdivisions of an administrative territorial entity
+Relation: head of government
+Relation Definition: head of the executive power of this town, city, municipality, state, country, or other governmental body
+Relation: country of citizenship
+Relation Definition: the object is a country that recognizes the subject as its citizen
+Relation: original network
+Relation Definition: network(s) the radio or television show was originally aired on, not including later re-runs or additional syndication
+Relation: heritage designation
+Relation Definition: heritage designation of a cultural or natural site
+Relation: performer
+Relation Definition: actor, musician, band or other performer associated with this role or musical work
+Relation: participant of
+Relation Definition: event a person or an organization was/is a participant in, inverse of P710 or P1923
+Relation: position held
+Relation Definition: subject currently or formerly holds the object position or public office
+Relation: has part
+Relation Definition: part of this subject; inverse property of "part of" (P361). See also "has parts of the class" (P2670).
+Relation: location of formation
+Relation Definition: location where a group or organization was formed
+Relation: located on terrain feature
+Relation Definition: located on the specified landform. Should not be used when the value is only political/administrative (P131) or a mountain range (P4552).
+Relation: architect
+Relation Definition: person or architectural firm that designed this building
+Relation: country of origin
+Relation Definition: country of origin of this item (creative work, food, phrase, product, etc.)
+Relation: publisher
+Relation Definition: organization or person responsible for publishing books, periodicals, games or software
+Relation: director
+Relation Definition: director(s) of film, TV-series, stageplay, video game or similar
+Relation: father
+Relation Definition: male parent of the subject. For stepfather, use "stepparent" (P3448)
+Relation: developer
+Relation Definition: organisation or person that developed the item
+Relation: military branch
+Relation Definition: branch to which this military unit, award, office, or person belongs, e.g. Royal Navy
+Relation: mouth of the watercourse
+Relation Definition: the body of water to which the watercourse drains
+Relation: nominated for
+Relation Definition: award nomination received by a person, organisation or creative work (inspired from "award received" (Property:P166))
+Relation: movement
+Relation Definition: literary, artistic, scientific or philosophical movement associated with this person or work
+Relation: successful candidate
+Relation Definition: person(s) elected after the election
+Relation: followed by
+Relation Definition: immediately following item in a series of which the subject is a part [if the subject has been replaced, e.g. political offices, use "replaced by" (P1366)]
+Relation: manufacturer
+Relation Definition: manufacturer or producer of this product
+Relation: instance of
+Relation Definition: that class of which this subject is a particular example and member (subject typically an individual member with a proper name label); different from P279; using this property as a qualifier is deprecated—use P2868 or P3831 instead
+Relation: after a work by
+Relation Definition: artist whose work strongly inspired/ was copied in this item
+Relation: member of political party
+Relation Definition: the political party of which this politician is or has been a member
+Relation: licensed to broadcast to
+Relation Definition: place that a radio/TV station is licensed/required to broadcast to
+Relation: headquarters location
+Relation Definition: specific location where an organization's headquarters is or has been situated. Inverse property of "occupant" (P466).
+Relation: sibling
+Relation Definition: the subject has the object as their sibling (brother, sister, etc.). Use "relative" (P1038) for siblings-in-law (brother-in-law, sister-in-law, etc.) and step-siblings (step-brothers, step-sisters, etc.)
+Relation: instrument
+Relation Definition: musical instrument that a person plays
+Relation: country
+Relation Definition: sovereign state of this item; don't use on humans
+Relation: occupation
+Relation Definition: occupation of a person; see also "field of work" (Property:P101), "position held" (Property:P39)
+Relation: residence
+Relation Definition: the place where the person is or has been, resident
+Relation: work location
+Relation Definition: location where persons were active
+Relation: subsidiary
+Relation Definition: subsidiary of a company or organization, opposite of parent organization (P749)
+Relation: participant
+Relation Definition: person, group of people or organization (object) that actively takes/took part in an event or process (subject).  Preferably qualify with "object has role" (P3831). Use P1923 for participants that are teams.
+Relation: operator
+Relation Definition: person, profession, or organization that operates the equipment, facility, or service; use country for diplomatic missions
+Relation: characters
+Relation Definition: characters which appear in this item (like plays, operas, operettas, books, comics, films, TV series, video games)
+Relation: occupant
+Relation Definition: a person or organization occupying property
+Relation: genre
+Relation Definition: creative work's genre or an artist's field of work (P101). Use main subject (P921) to relate creative works to their topic
+Relation: operating system
+Relation Definition: operating system (OS) on which a software works or the OS installed on hardware
+Relation: owned by
+Relation Definition: owner of the subject
+Relation: platform
+Relation Definition: platform for which a work was developed or released, or the specific platform version of a software product
+Relation: tributary
+Relation Definition: stream or river that flows into this main stem (or parent) river
+Relation: winner
+Relation Definition: winner of an event - do not use for awards (use P166 instead), nor for wars or battles
+Relation: said to be the same as
+Relation Definition: this item is said to be the same as that item, but the statement is disputed
+Relation: composer
+Relation Definition: person(s) who wrote the music [for lyricist, use "lyrics by" (P676)]
+Relation: league
+Relation Definition: league in which team or player plays or has played in
+Relation: record label
+Relation Definition: brand and trademark associated with the marketing of subject music recordings and music videos
+Relation: distributor
+Relation Definition: distributor of a creative work; distributor for a record label
+Relation: screenwriter
+Relation Definition: person(s) who wrote the script for subject item
+Relation: sports season of league or competition
+Relation Definition: property that shows the competition of which the item is a season. Use P5138 for "season of club or team".
+Relation: taxon rank
+Relation Definition: level in a taxonomic hierarchy
+Relation: location
+Relation Definition: location of the item, physical object or event is within. In case of an administrative entity use P131. In case of a distinct terrain feature use P706.
+Relation: field of work
+Relation Definition: specialization of a person or organization; see P106 for the occupation
+Relation: language of work or name
+Relation Definition: language associated with this creative work (such as books, shows, songs, or websites) or a name (for persons use P103 and P1412)
+Relation: applies to jurisdiction
+Relation Definition: the item (an institution, law, public office ...) or statement belongs to or has power over or applies to the value (a territorial jurisdiction: a country, state, municipality, ...)
+Relation: notable work
+Relation Definition: notable scientific, artistic or literary work, or other work of significance among subject's works
+Relation: located in the administrative territorial entity
+Relation Definition: the item is located on the territory of the following administrative entity. Use P276 (location) for specifying the location of non-administrative places and for items about events
+####
+Identify the relation between the head entity and the tail entity in the given sentence.
+Sentence: Merpati flight 106 departed Jakarta ( CGK ) on a domestic flight to Tanjung Pandan ( TJQ ) .
+Head Entity: TJQ; Tail Entity: Tanjung Pandan
+Relation: place served by transport hub
+Sentence: It is approximately 8 km away from Mount Korbu , the tallest mountain of the Titiwangsa Mountains .
+Head Entity: Mount Korbu; Tail Entity: Titiwangsa Mountains
+Relation: mountain range
+Sentence: In 1689 , Konstanty was one of the judges who sentenced Kazimierz Łyszczyński to death for atheism .
+Head Entity: Kazimierz Łyszczyński; Tail Entity: atheism
+Relation: religion
+Sentence: On 26 August 2016 , in his Bundesliga debut , Bayern defeated Werder Bremen 6–0 .
+Head Entity: Bundesliga; Tail Entity: Werder Bremen
+Relation: participating team
+Sentence: The sailor was rescued by Saudi Arabian border guards in the Red Sea and taken to Jizan Province of Saudi Arabia .
+Head Entity: Saudi Arabia; Tail Entity: Jizan Province
+Relation: contains administrative territorial entity
+Sentence: Chester Alan Arthur , 21st President of the United States , died of this disease , November 18 , 1886
+Head Entity: United States; Tail Entity: Chester Alan Arthur
+Relation: head of government
+Sentence: Vares : Private Eye ( ) is a 2004 Finnish crime film directed by Aleksi Mäkelä .
+Head Entity: Aleksi Mäkelä; Tail Entity: Finnish
+Relation: country of citizenship
+Sentence: first aired against fellow freshmen show " K - Ville " on FOX .
+Head Entity: K - Ville; Tail Entity: FOX
+Relation: original network
+Sentence: The property , including Drummers ' Building and sidewalk , was added to the National Register of Historic Places on June 17 , 1982 , as " Jaeckel Hotel " .
+Head Entity: Jaeckel Hotel; Tail Entity: National Register of Historic Places
+Relation: heritage designation
+Sentence: The song has been recorded by the German power metal band Helloween as a track on their 1995 CD single " Sole Survivor " .
+Head Entity: Sole Survivor; Tail Entity: Helloween
+Relation: performer

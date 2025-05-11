@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: occupant
+Head Entity: Silverstein Eye Centers Arena; Tail Entity: Kansas City Mavericks
+Sentence: The ECHL 's Kansas City Mavericks currently play at the suburban Silverstein Eye Centers Arena in Independence , Missouri .
+Relation: occupant
+Head Entity1: ; Tail Entity2:
+Sentence:

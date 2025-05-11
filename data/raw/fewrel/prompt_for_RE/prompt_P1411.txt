@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: nominated for
+Relation Definition: award nomination received by a person, organisation or creative work (inspired from "award received" (Property:P166))
+Relation: nominated for
+Head Entity: A Star is Born; Tail Entity: Best Picture
+Head Entity:

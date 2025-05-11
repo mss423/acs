@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: genre
+Relation Definition: creative work's genre or an artist's field of work (P101). Use main subject (P921) to relate creative works to their topic
+Relation: genre
+Head Entity: Trailer Bride; Tail Entity: alternative country
+Head Entity:

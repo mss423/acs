@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: location
+Head Entity: executed 49 of them; Tail Entity: Paramythia
+Sentence: Links Verlag , 2008 . , p. 469 In another incident , on 27 September , Cham militias arrested 53 Greek citizens in Paramythia and executed 49 of them two days later .
+Relation: location
+Head Entity1: ; Tail Entity2:
+Sentence:

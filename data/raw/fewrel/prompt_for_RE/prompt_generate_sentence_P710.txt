@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: participant
+Head Entity: Eurovision Song Contest 2006; Tail Entity: Tina Karol
+Sentence: In 2007 Yurii Barybin was invited to hold a technical director and production manager positions for Tina Karol - singer , songwriter , Eurovision Song Contest 2006 Ukrainian representative .
+Relation: participant
+Head Entity1: ; Tail Entity2:
+Sentence:

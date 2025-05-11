@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: director
+Head Entity: Hair; Tail Entity: Miloš Forman
+Sentence: Cheryl Barnes is a singer who starred in Miloš Forman ’s 1979 film adaptation of " Hair " as the mother of Hud ’s little son .
+Relation: director
+Head Entity1: ; Tail Entity2:
+Sentence:

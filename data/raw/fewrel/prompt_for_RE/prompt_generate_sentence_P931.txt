@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: place served by transport hub
+Head Entity: TJQ; Tail Entity: Tanjung Pandan
+Sentence: Merpati flight 106 departed Jakarta ( CGK ) on a domestic flight to Tanjung Pandan ( TJQ ) .
+Relation: place served by transport hub
+Head Entity1: ; Tail Entity2:
+Sentence:

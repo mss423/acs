@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: residence
+Head Entity: Wong Kei - ying; Tail Entity: Foshan
+Sentence: Wong Fei - hung plans to return to Foshan with his father Wong Kei - ying and apprentices Leung Foon and Clubfoot .
+Relation: residence
+Head Entity1: ; Tail Entity2:
+Sentence:

@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: military branch
+Head Entity: Enomoto Takeaki; Tail Entity: Imperial Japanese Navy
+Sentence: Among the students at the Nagasaki Naval Training Center was Enomoto Takeaki , one of the founders of the Imperial Japanese Navy .
+Relation: military branch
+Head Entity1: ; Tail Entity2:
+Sentence:

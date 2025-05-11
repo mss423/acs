@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: field of work
+Head Entity: Conrad Moench; Tail Entity: botanist
+Sentence: It was first described by German botanist Conrad Moench .
+Relation: field of work
+Head Entity1: ; Tail Entity2:
+Sentence:

@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: sports season of league or competition
+Head Entity: 1959; Tail Entity: National Football League
+Sentence: The 1959 Los Angeles Rams season was the team 's 22nd year with the National Football League and the 14th season in Los Angeles .
+Relation: sports season of league or competition
+Head Entity1: ; Tail Entity2:
+Sentence:

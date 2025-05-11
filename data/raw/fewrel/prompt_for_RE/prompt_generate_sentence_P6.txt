@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: head of government
+Head Entity: United States; Tail Entity: Chester Alan Arthur
+Sentence: Chester Alan Arthur , 21st President of the United States , died of this disease , November 18 , 1886
+Relation: head of government
+Head Entity1: ; Tail Entity2:
+Sentence:

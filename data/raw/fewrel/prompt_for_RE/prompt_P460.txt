@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: said to be the same as
+Relation Definition: this item is said to be the same as that item, but the statement is disputed
+Relation: said to be the same as
+Head Entity: Lamiaceae; Tail Entity: Labiatae
+Head Entity:

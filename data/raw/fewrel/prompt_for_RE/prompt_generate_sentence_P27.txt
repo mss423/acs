@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: country of citizenship
+Head Entity: Aleksi Mäkelä; Tail Entity: Finnish
+Sentence: Vares : Private Eye ( ) is a 2004 Finnish crime film directed by Aleksi Mäkelä .
+Relation: country of citizenship
+Head Entity1: ; Tail Entity2:
+Sentence:

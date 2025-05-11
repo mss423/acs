@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: performer
+Relation Definition: actor, musician, band or other performer associated with this role or musical work
+Relation: performer
+Head Entity: Sole Survivor; Tail Entity: Helloween
+Head Entity:

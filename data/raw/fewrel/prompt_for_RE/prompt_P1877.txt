@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: after a work by
+Relation Definition: artist whose work strongly inspired/ was copied in this item
+Relation: after a work by
+Head Entity: Bread of Those Early Years; Tail Entity: Heinrich Böll
+Head Entity:

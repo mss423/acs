@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: notable work
+Head Entity: Devaki Nandan Khatri; Tail Entity: Chandrakanta
+Sentence: Devaki Nandan Khatri , who at the beginning of the 20th century wrote novels including " Chandrakanta " and " Chandrakanta Santati " , was born in Muzaffarpur , Bihar .
+Relation: notable work
+Head Entity1: ; Tail Entity2:
+Sentence:

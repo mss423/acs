@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: operator
+Head Entity: South Dakota Cultural Heritage Center; Tail Entity: South Dakota State Historical Society
+Sentence: The South Dakota Cultural Heritage Center in Pierre , South Dakota is the headquarters of the South Dakota State Historical Society .
+Relation: operator
+Head Entity1: ; Tail Entity2:
+Sentence:

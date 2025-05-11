@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: architect
+Relation Definition: person or architectural firm that designed this building
+Relation: architect
+Head Entity: Mausoleum at Halicarnassus; Tail Entity: Satyros
+Head Entity:

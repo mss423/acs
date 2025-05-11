@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: participant of
+Head Entity: Jens Bojsen - Møller; Tail Entity: 1992 Summer Olympics
+Sentence: At the 1992 Summer Olympics in Barcelona he received a bronze medal in the Flying Dutchman , together with his cousin Jens Bojsen - Møller .
+Relation: participant of
+Head Entity1: ; Tail Entity2:
+Sentence:

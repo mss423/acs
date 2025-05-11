@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: religion
+Relation Definition: religion of a person, organization or religious building, or associated with this subject
+Relation: religion
+Head Entity: Kazimierz Łyszczyński; Tail Entity: atheism
+Head Entity:

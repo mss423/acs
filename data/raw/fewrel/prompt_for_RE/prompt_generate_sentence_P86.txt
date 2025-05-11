@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: composer
+Head Entity: Hum Dil De Chuke Sanam; Tail Entity: Ismail Darbar
+Sentence: Rahman made a clean sweep of all the music awards that year except the National Film Award for Best Music Direction which went to Ismail Darbar for " Hum Dil De Chuke Sanam " .
+Relation: composer
+Head Entity1: ; Tail Entity2:
+Sentence:

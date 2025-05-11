@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: owned by
+Relation Definition: owner of the subject
+Relation: owned by
+Head Entity: Babylon Branch; Tail Entity: Long Island Rail Road
+Head Entity:

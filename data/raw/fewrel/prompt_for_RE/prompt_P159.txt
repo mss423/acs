@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: headquarters location
+Relation Definition: specific location where an organization's headquarters is or has been situated. Inverse property of "occupant" (P466).
+Relation: headquarters location
+Head Entity: Museo del Novecento; Tail Entity: Arengario palace
+Head Entity:

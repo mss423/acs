@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: characters
+Relation Definition: characters which appear in this item (like plays, operas, operettas, books, comics, films, TV series, video games)
+Relation: characters
+Head Entity: Persuasion; Tail Entity: Anne Elliot
+Head Entity:

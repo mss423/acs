@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: mouth of the watercourse
+Relation Definition: the body of water to which the watercourse drains
+Relation: mouth of the watercourse
+Head Entity: Mackenzie; Tail Entity: Beaufort Sea
+Head Entity:

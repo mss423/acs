@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: religion
+Head Entity: Kazimierz Łyszczyński; Tail Entity: atheism
+Sentence: In 1689 , Konstanty was one of the judges who sentenced Kazimierz Łyszczyński to death for atheism .
+Relation: religion
+Head Entity1: ; Tail Entity2:
+Sentence:

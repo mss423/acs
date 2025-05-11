@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: military branch
+Relation Definition: branch to which this military unit, award, office, or person belongs, e.g. Royal Navy
+Relation: military branch
+Head Entity: Enomoto Takeaki; Tail Entity: Imperial Japanese Navy
+Head Entity:

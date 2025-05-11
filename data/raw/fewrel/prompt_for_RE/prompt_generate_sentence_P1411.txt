@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: nominated for
+Head Entity: A Star is Born; Tail Entity: Best Picture
+Sentence: " A Star is Born " was the first color film to receive a Best Picture nomination .
+Relation: nominated for
+Head Entity1: ; Tail Entity2:
+Sentence:

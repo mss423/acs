@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: country of origin
+Head Entity: Spin Doctors; Tail Entity: American
+Sentence: Turn It Upside Down is the second studio album and fourth release overall by American rock band Spin Doctors , released in 1994 .
+Relation: country of origin
+Head Entity1: ; Tail Entity2:
+Sentence:

@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: publisher
+Relation Definition: organization or person responsible for publishing books, periodicals, games or software
+Relation: publisher
+Head Entity: Journal of Photochemistry and Photobiology; Tail Entity: Elsevier
+Head Entity:

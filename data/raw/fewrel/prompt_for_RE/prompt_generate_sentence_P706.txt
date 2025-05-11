@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: located on terrain feature
+Head Entity: Kanatadika; Tail Entity: Euboea
+Sentence: The island lies between Kanatadika on Euboea and the mainland near Achilleio , Magnesia .
+Relation: located on terrain feature
+Head Entity1: ; Tail Entity2:
+Sentence:

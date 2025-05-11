@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: work location
+Relation Definition: location where persons were active
+Relation: work location
+Head Entity: Ibn Tumart; Tail Entity: Marrakesh
+Head Entity:

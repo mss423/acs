@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: tributary
+Relation Definition: stream or river that flows into this main stem (or parent) river
+Relation: tributary
+Head Entity: Hudson River; Tail Entity: Schroon River
+Head Entity:

@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: member of political party
+Head Entity: Diane Ablonczy; Tail Entity: Conservative Party
+Sentence: Rempel became involved in politics with the riding association of Diane Ablonczy , and she later served as president of the Conservative Party riding executive for her riding of Calgary — Nose Hill .
+Relation: member of political party
+Head Entity1: ; Tail Entity2:
+Sentence:

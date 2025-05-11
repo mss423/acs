@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: father
+Head Entity: Margaret; Tail Entity: Odo , Count of Nevers
+Sentence: Matilda II died five years later , in 1262 , and her husband Odo , Count of Nevers divided the three counties between her daughters Yolande , Margaret and Adelaide .
+Relation: father
+Head Entity1: ; Tail Entity2:
+Sentence:

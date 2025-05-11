@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: located on terrain feature
+Relation Definition: located on the specified landform. Should not be used when the value is only political/administrative (P131) or a mountain range (P4552).
+Relation: located on terrain feature
+Head Entity: Kanatadika; Tail Entity: Euboea
+Head Entity:

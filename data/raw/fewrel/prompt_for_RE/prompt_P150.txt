@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: contains administrative territorial entity
+Relation Definition: (list of) direct subdivisions of an administrative territorial entity
+Relation: contains administrative territorial entity
+Head Entity: Saudi Arabia; Tail Entity: Jizan Province
+Head Entity:

@@ -1,0 +1,198 @@
+Identify the relation between the head entity and the tail entity in the given sentence.
+Relation: place served by transport hub; mountain range; religion; participating team; contains administrative territorial entity; head of government; country of citizenship; original network; heritage designation; performer; participant of; position held; has part; location of formation; located on terrain feature; architect; country of origin; publisher; director; father; developer; military branch; mouth of the watercourse; nominated for; movement; successful candidate; followed by; manufacturer; instance of; after a work by; member of political party; licensed to broadcast to; headquarters location; sibling; instrument; country; occupation; residence; work location; subsidiary; participant; operator; characters; occupant; genre; operating system; owned by; platform; tributary; winner; said to be the same as; composer; league; record label; distributor; screenwriter; sports season of league or competition; taxon rank; location; field of work; language of work or name; applies to jurisdiction; notable work; located in the administrative territorial entity;
+#####
+Sentence: Merpati flight 106 departed Jakarta ( CGK ) on a domestic flight to Tanjung Pandan ( TJQ ) .
+Head Entity: TJQ; Tail Entity: Tanjung Pandan
+Relation: place served by transport hub
+Sentence: It is approximately 8 km away from Mount Korbu , the tallest mountain of the Titiwangsa Mountains .
+Head Entity: Mount Korbu; Tail Entity: Titiwangsa Mountains
+Relation: mountain range
+Sentence: In 1689 , Konstanty was one of the judges who sentenced Kazimierz Łyszczyński to death for atheism .
+Head Entity: Kazimierz Łyszczyński; Tail Entity: atheism
+Relation: religion
+Sentence: On 26 August 2016 , in his Bundesliga debut , Bayern defeated Werder Bremen 6–0 .
+Head Entity: Bundesliga; Tail Entity: Werder Bremen
+Relation: participating team
+Sentence: The sailor was rescued by Saudi Arabian border guards in the Red Sea and taken to Jizan Province of Saudi Arabia .
+Head Entity: Saudi Arabia; Tail Entity: Jizan Province
+Relation: contains administrative territorial entity
+Sentence: Chester Alan Arthur , 21st President of the United States , died of this disease , November 18 , 1886
+Head Entity: United States; Tail Entity: Chester Alan Arthur
+Relation: head of government
+Sentence: Vares : Private Eye ( ) is a 2004 Finnish crime film directed by Aleksi Mäkelä .
+Head Entity: Aleksi Mäkelä; Tail Entity: Finnish
+Relation: country of citizenship
+Sentence: first aired against fellow freshmen show " K - Ville " on FOX .
+Head Entity: K - Ville; Tail Entity: FOX
+Relation: original network
+Sentence: The property , including Drummers ' Building and sidewalk , was added to the National Register of Historic Places on June 17 , 1982 , as " Jaeckel Hotel " .
+Head Entity: Jaeckel Hotel; Tail Entity: National Register of Historic Places
+Relation: heritage designation
+Sentence: The song has been recorded by the German power metal band Helloween as a track on their 1995 CD single " Sole Survivor " .
+Head Entity: Sole Survivor; Tail Entity: Helloween
+Relation: performer
+Sentence: At the 1992 Summer Olympics in Barcelona he received a bronze medal in the Flying Dutchman , together with his cousin Jens Bojsen - Møller .
+Head Entity: Jens Bojsen - Møller; Tail Entity: 1992 Summer Olympics
+Relation: participant of
+Sentence: Mitchell Hepburn , the Premier of Ontario and John B. McNair , the Premier of New Brunswick both demanded overseas conscription in speeches attacking King .
+Head Entity: Mitchell Hepburn; Tail Entity: Premier of Ontario
+Relation: position held
+Sentence: In " The Telling " , Terra 's incorporation into the Ekumen is briefly explained .
+Head Entity: Ekumen; Tail Entity: The Telling
+Relation: has part
+Sentence: Similar movements concurrently formed in many other countries , leading to the formation , at a 1947 meeting in Montreux , Switzerland , of a global coalition , now called World Federalist Movement .
+Head Entity: World Federalist Movement; Tail Entity: Montreux
+Relation: location of formation
+Sentence: The island lies between Kanatadika on Euboea and the mainland near Achilleio , Magnesia .
+Head Entity: Kanatadika; Tail Entity: Euboea
+Relation: located on terrain feature
+Sentence: Pythius and Satyros were the co - designers of the great Mausoleum at Halicarnassus on the Aegean Sea opposite Greece , with Pythius being credited with the great marble quadriga which surmounted the mausoleum .
+Head Entity: Mausoleum at Halicarnassus; Tail Entity: Satyros
+Relation: architect
+Sentence: Turn It Upside Down is the second studio album and fourth release overall by American rock band Spin Doctors , released in 1994 .
+Head Entity: Spin Doctors; Tail Entity: American
+Relation: country of origin
+Sentence: Financial and contractual problems prevented agreement and , instead , ESP contracted with Elsevier leading to the publication of the Journal of Photochemistry and Photobiology in 1987 .
+Head Entity: Journal of Photochemistry and Photobiology; Tail Entity: Elsevier
+Relation: publisher
+Sentence: Cheryl Barnes is a singer who starred in Miloš Forman ’s 1979 film adaptation of " Hair " as the mother of Hud ’s little son .
+Head Entity: Hair; Tail Entity: Miloš Forman
+Relation: director
+Sentence: Matilda II died five years later , in 1262 , and her husband Odo , Count of Nevers divided the three counties between her daughters Yolande , Margaret and Adelaide .
+Head Entity: Margaret; Tail Entity: Odo , Count of Nevers
+Relation: father
+Sentence: " Resonance of Fate " marked the first collaboration between tri - Ace and Sega — most of tri - Ace 's previous games had been published by Square Enix .
+Head Entity: Resonance of Fate; Tail Entity: tri - Ace
+Relation: developer
+Sentence: Among the students at the Nagasaki Naval Training Center was Enomoto Takeaki , one of the founders of the Imperial Japanese Navy .
+Head Entity: Enomoto Takeaki; Tail Entity: Imperial Japanese Navy
+Relation: military branch
+Sentence: The Peel watershed drains 14 % of the Yukon Territory Canada and flows into the Beaufort Sea via the Peel and then Mackenzie Rivers .
+Head Entity: Mackenzie; Tail Entity: Beaufort Sea
+Relation: mouth of the watercourse
+Sentence: " A Star is Born " was the first color film to receive a Best Picture nomination .
+Head Entity: A Star is Born; Tail Entity: Best Picture
+Relation: nominated for
+Sentence: The large workshops of Peter Paul Rubens and Jacob Jordaens , and the influence of Anthony van Dyck , made Antwerp the center of the Flemish Baroque .
+Head Entity: Peter Paul Rubens; Tail Entity: Flemish Baroque
+Relation: movement
+Sentence: Christine Branstad returned for a fifth term as First Lady in 2010 following Terry Branstad 's election in 2010 .
+Head Entity: election in 2010; Tail Entity: Terry Branstad
+Relation: successful candidate
+Sentence: It is the fourth installment in the " Predator " film series , set to take place between " Predator 2 " ( 1990 ) and " Predators " ( 2010 ) .
+Head Entity: Predator 2; Tail Entity: Predators
+Relation: followed by
+Sentence: Notable exhibitors included the company iRobot , creators of Roomba , and NASA .
+Head Entity: Roomba; Tail Entity: iRobot
+Relation: manufacturer
+Sentence: Logic Express was a " light " version of Logic Pro , a MIDI sequencer and digital audio workstation software application maintained by Apple that runs on the Mac OS X platform .
+Head Entity: Logic Pro; Tail Entity: digital audio workstation
+Relation: instance of
+Sentence: The Bread of Those Early Years ( ) is a 1955 novel by the West German writer Heinrich Böll .
+Head Entity: Bread of Those Early Years; Tail Entity: Heinrich Böll
+Relation: after a work by
+Sentence: Rempel became involved in politics with the riding association of Diane Ablonczy , and she later served as president of the Conservative Party riding executive for her riding of Calgary — Nose Hill .
+Head Entity: Diane Ablonczy; Tail Entity: Conservative Party
+Relation: member of political party
+Sentence: In November 2015 , WSJO added the programming of WPGG 1450 Atlantic City on HD2 , and WJPH / WJPG 's Praise FM on HD3 .
+Head Entity: WPGG; Tail Entity: Atlantic City
+Relation: licensed to broadcast to
+Sentence: It can be viewed at the Museo del Novecento in the Arengario palace near Duomo square in the centre of Milan .
+Head Entity: Museo del Novecento; Tail Entity: Arengario palace
+Relation: headquarters location
+Sentence: His family met William Thackeray and Charles Dickens on their American tours , and James even remembered Thackeray mock - scolding his sister Alice for her crinoline dress : " Crinoline ?
+Head Entity: William; Tail Entity: Alice
+Relation: sibling
+Sentence: He began studying piano at an early age , but switched to saxophone in middle school after hearing a record by Stan Getz .
+Head Entity: Stan Getz; Tail Entity: saxophone
+Relation: instrument
+Sentence: Belgium 's highest point is the Signal de Botrange at 694 meters above the sea level .
+Head Entity: Signal de Botrange; Tail Entity: Belgium
+Relation: country
+Sentence: Cunlhat was the birthplace of Maurice Pialat ( 1925–2003 ) , film director and actor .
+Head Entity: Maurice Pialat; Tail Entity: film director
+Relation: occupation
+Sentence: Wong Fei - hung plans to return to Foshan with his father Wong Kei - ying and apprentices Leung Foon and Clubfoot .
+Head Entity: Wong Kei - ying; Tail Entity: Foshan
+Relation: residence
+Sentence: Shortly after his arrival in Marrakesh , Ibn Tumart is said to have successfully sought out the Almoravid ruler Ali ibn Yusuf at a local mosque .
+Head Entity: Ibn Tumart; Tail Entity: Marrakesh
+Relation: work location
+Sentence: He is head of the " VIB Department of Molecular Biology , KU Leuven " .
+Head Entity: KU Leuven; Tail Entity: VIB
+Relation: subsidiary
+Sentence: In 2007 Yurii Barybin was invited to hold a technical director and production manager positions for Tina Karol - singer , songwriter , Eurovision Song Contest 2006 Ukrainian representative .
+Head Entity: Eurovision Song Contest 2006; Tail Entity: Tina Karol
+Relation: participant
+Sentence: The South Dakota Cultural Heritage Center in Pierre , South Dakota is the headquarters of the South Dakota State Historical Society .
+Head Entity: South Dakota Cultural Heritage Center; Tail Entity: South Dakota State Historical Society
+Relation: operator
+Sentence: Actress Sally Hawkins was asked to play " Persuasion 's " protagonist Anne Elliot .
+Head Entity: Persuasion; Tail Entity: Anne Elliot
+Relation: characters
+Sentence: The ECHL 's Kansas City Mavericks currently play at the suburban Silverstein Eye Centers Arena in Independence , Missouri .
+Head Entity: Silverstein Eye Centers Arena; Tail Entity: Kansas City Mavericks
+Relation: occupant
+Sentence: Trailer Bride was a Chapel Hill , North Carolina - based alternative country rock band signed to Bloodshot Records .
+Head Entity: Trailer Bride; Tail Entity: alternative country
+Relation: genre
+Sentence: This has caused the development of new digital typesetting techniques such as OpenType , and the incorporation of ligature support into the text display systems of macOS , Windows and applications like Microsoft Office .
+Head Entity: Microsoft Office; Tail Entity: macOS
+Relation: operating system
+Sentence: Amityville is the westernmost station on the Babylon Branch of the Long Island Rail Road in Suffolk County , New York .
+Head Entity: Babylon Branch; Tail Entity: Long Island Rail Road
+Relation: owned by
+Sentence: For instance , Firebird created the Commodore 64 releases of " Sabre Wulf " and " Underwurlde " .
+Head Entity: Sabre Wulf; Tail Entity: Commodore 64
+Relation: platform
+Sentence: The east side of Grace Peak drains into Lindsay Brook , thence into the Schroon River , the Hudson River , and into New York Bay .
+Head Entity: Hudson River; Tail Entity: Schroon River
+Relation: tributary
+Sentence: In 1961 he guided Fiorentina to victory in the first ever European Cup Winners ' Cup , beating Rangers 4–1 on aggregate in the final .
+Head Entity: the first ever; Tail Entity: Fiorentina
+Relation: winner
+Sentence: While he was clear about the integrity of the overall family , he was less confident about his organization of " Salvia " , the largest genus in Labiatae ( also called Lamiaceae ) .
+Head Entity: Lamiaceae; Tail Entity: Labiatae
+Relation: said to be the same as
+Sentence: Rahman made a clean sweep of all the music awards that year except the National Film Award for Best Music Direction which went to Ismail Darbar for " Hum Dil De Chuke Sanam " .
+Head Entity: Hum Dil De Chuke Sanam; Tail Entity: Ismail Darbar
+Relation: composer
+Sentence: He made his debut in the Russian Professional Football League for FC Lokomotiv - Kazanka Moscow on 3 August 2017 in a game against FC Torpedo Vladimir .
+Head Entity: FC Torpedo Vladimir; Tail Entity: Russian Professional Football League
+Relation: league
+Sentence: The Very Air We Breathe is the first album from Pop punk / Electronica band Driver side impact released in 2007 under Victory Records .
+Head Entity: Driver side impact; Tail Entity: Victory Records
+Relation: record label
+Sentence: Following " The Painted Hills " in 1951 , MGM executives felt Lassie had run her course and planned no future films featuring the character .
+Head Entity: The Painted Hills; Tail Entity: MGM
+Relation: distributor
+Sentence: " Citizen Khan " is written by Anil Gupta and Richard Pinto ( " The Kumars at No 42 " , " Goodness Gracious Me " ) with Adil Ray .
+Head Entity: Citizen Khan; Tail Entity: Anil Gupta
+Relation: screenwriter
+Sentence: The 1959 Los Angeles Rams season was the team 's 22nd year with the National Football League and the 14th season in Los Angeles .
+Head Entity: 1959; Tail Entity: National Football League
+Relation: sports season of league or competition
+Sentence: Polietes is a genus from the fly family Muscidae .
+Head Entity: Muscidae; Tail Entity: family
+Relation: taxon rank
+Sentence: Links Verlag , 2008 . , p. 469 In another incident , on 27 September , Cham militias arrested 53 Greek citizens in Paramythia and executed 49 of them two days later .
+Head Entity: executed 49 of them; Tail Entity: Paramythia
+Relation: location
+Sentence: It was first described by German botanist Conrad Moench .
+Head Entity: Conrad Moench; Tail Entity: botanist
+Relation: field of work
+Sentence: Japanese video sharing website Niconico played a fundamental role in the recognition and popularity of the software .
+Head Entity: Niconico; Tail Entity: Japanese
+Relation: language of work or name
+Sentence: In April 2014 , the European Court of Justice ruled that the European Union 's Data Retention Directive was invalid .
+Head Entity: European Court of Justice; Tail Entity: European Union
+Relation: applies to jurisdiction
+Sentence: Devaki Nandan Khatri , who at the beginning of the 20th century wrote novels including " Chandrakanta " and " Chandrakanta Santati " , was born in Muzaffarpur , Bihar .
+Head Entity: Devaki Nandan Khatri; Tail Entity: Chandrakanta
+Relation: notable work
+Sentence: Downing House is a historic home located at Memphis , Scotland County , Missouri .
+Head Entity: Memphis; Tail Entity: Scotland County , Missouri
+Relation: located in the administrative territorial entity
+Sentence1:
+Head Entity1:; Tail Entity1:
+Relation:

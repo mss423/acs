@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: architect
+Head Entity: Mausoleum at Halicarnassus; Tail Entity: Satyros
+Sentence: Pythius and Satyros were the co - designers of the great Mausoleum at Halicarnassus on the Aegean Sea opposite Greece , with Pythius being credited with the great marble quadriga which surmounted the mausoleum .
+Relation: architect
+Head Entity1: ; Tail Entity2:
+Sentence:

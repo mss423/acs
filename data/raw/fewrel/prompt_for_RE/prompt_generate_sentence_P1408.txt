@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: licensed to broadcast to
+Head Entity: WPGG; Tail Entity: Atlantic City
+Sentence: In November 2015 , WSJO added the programming of WPGG 1450 Atlantic City on HD2 , and WJPH / WJPG 's Praise FM on HD3 .
+Relation: licensed to broadcast to
+Head Entity1: ; Tail Entity2:
+Sentence:

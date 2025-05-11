@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: mouth of the watercourse
+Head Entity: Mackenzie; Tail Entity: Beaufort Sea
+Sentence: The Peel watershed drains 14 % of the Yukon Territory Canada and flows into the Beaufort Sea via the Peel and then Mackenzie Rivers .
+Relation: mouth of the watercourse
+Head Entity1: ; Tail Entity2:
+Sentence:

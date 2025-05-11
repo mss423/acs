@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: followed by
+Head Entity: Predator 2; Tail Entity: Predators
+Sentence: It is the fourth installment in the " Predator " film series , set to take place between " Predator 2 " ( 1990 ) and " Predators " ( 2010 ) .
+Relation: followed by
+Head Entity1: ; Tail Entity2:
+Sentence:

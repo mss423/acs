@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: contains administrative territorial entity
+Head Entity: Saudi Arabia; Tail Entity: Jizan Province
+Sentence: The sailor was rescued by Saudi Arabian border guards in the Red Sea and taken to Jizan Province of Saudi Arabia .
+Relation: contains administrative territorial entity
+Head Entity1: ; Tail Entity2:
+Sentence:

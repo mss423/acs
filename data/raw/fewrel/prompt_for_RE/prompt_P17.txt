@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: country
+Relation Definition: sovereign state of this item; don't use on humans
+Relation: country
+Head Entity: Signal de Botrange; Tail Entity: Belgium
+Head Entity:

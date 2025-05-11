@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: field of work
+Relation Definition: specialization of a person or organization; see P106 for the occupation
+Relation: field of work
+Head Entity: Conrad Moench; Tail Entity: botanist
+Head Entity:

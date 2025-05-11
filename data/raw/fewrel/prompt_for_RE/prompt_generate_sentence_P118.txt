@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: league
+Head Entity: FC Torpedo Vladimir; Tail Entity: Russian Professional Football League
+Sentence: He made his debut in the Russian Professional Football League for FC Lokomotiv - Kazanka Moscow on 3 August 2017 in a game against FC Torpedo Vladimir .
+Relation: league
+Head Entity1: ; Tail Entity2:
+Sentence:

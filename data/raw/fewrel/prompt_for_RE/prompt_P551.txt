@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: residence
+Relation Definition: the place where the person is or has been, resident
+Relation: residence
+Head Entity: Wong Kei - ying; Tail Entity: Foshan
+Head Entity:

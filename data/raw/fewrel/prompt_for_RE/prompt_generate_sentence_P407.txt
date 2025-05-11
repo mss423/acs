@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: language of work or name
+Head Entity: Niconico; Tail Entity: Japanese
+Sentence: Japanese video sharing website Niconico played a fundamental role in the recognition and popularity of the software .
+Relation: language of work or name
+Head Entity1: ; Tail Entity2:
+Sentence:

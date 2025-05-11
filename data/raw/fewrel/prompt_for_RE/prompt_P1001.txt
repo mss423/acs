@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: applies to jurisdiction
+Relation Definition: the item (an institution, law, public office ...) or statement belongs to or has power over or applies to the value (a territorial jurisdiction: a country, state, municipality, ...)
+Relation: applies to jurisdiction
+Head Entity: European Court of Justice; Tail Entity: European Union
+Head Entity:

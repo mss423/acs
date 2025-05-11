@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: has part
+Relation Definition: part of this subject; inverse property of "part of" (P361). See also "has parts of the class" (P2670).
+Relation: has part
+Head Entity: Ekumen; Tail Entity: The Telling
+Head Entity:

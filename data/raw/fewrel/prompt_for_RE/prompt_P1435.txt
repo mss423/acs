@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: heritage designation
+Relation Definition: heritage designation of a cultural or natural site
+Relation: heritage designation
+Head Entity: Jaeckel Hotel; Tail Entity: National Register of Historic Places
+Head Entity:

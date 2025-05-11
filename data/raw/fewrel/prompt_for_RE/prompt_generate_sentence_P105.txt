@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: taxon rank
+Head Entity: Muscidae; Tail Entity: family
+Sentence: Polietes is a genus from the fly family Muscidae .
+Relation: taxon rank
+Head Entity1: ; Tail Entity2:
+Sentence:

@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: place served by transport hub
+Relation Definition: territorial entity or entities served by this transport hub (airport, train station, etc.)
+Relation: place served by transport hub
+Head Entity: TJQ; Tail Entity: Tanjung Pandan
+Head Entity:

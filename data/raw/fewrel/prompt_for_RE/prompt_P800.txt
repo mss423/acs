@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: notable work
+Relation Definition: notable scientific, artistic or literary work, or other work of significance among subject's works
+Relation: notable work
+Head Entity: Devaki Nandan Khatri; Tail Entity: Chandrakanta
+Head Entity:

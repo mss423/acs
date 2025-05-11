@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: developer
+Relation Definition: organisation or person that developed the item
+Relation: developer
+Head Entity: Resonance of Fate; Tail Entity: tri - Ace
+Head Entity:

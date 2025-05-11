@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: location of formation
+Relation Definition: location where a group or organization was formed
+Relation: location of formation
+Head Entity: World Federalist Movement; Tail Entity: Montreux
+Head Entity:

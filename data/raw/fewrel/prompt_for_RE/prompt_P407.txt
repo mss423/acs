@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: language of work or name
+Relation Definition: language associated with this creative work (such as books, shows, songs, or websites) or a name (for persons use P103 and P1412)
+Relation: language of work or name
+Head Entity: Niconico; Tail Entity: Japanese
+Head Entity:

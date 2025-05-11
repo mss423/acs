@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: operating system
+Relation Definition: operating system (OS) on which a software works or the OS installed on hardware
+Relation: operating system
+Head Entity: Microsoft Office; Tail Entity: macOS
+Head Entity:

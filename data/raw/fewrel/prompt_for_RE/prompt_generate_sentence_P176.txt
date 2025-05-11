@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: manufacturer
+Head Entity: Roomba; Tail Entity: iRobot
+Sentence: Notable exhibitors included the company iRobot , creators of Roomba , and NASA .
+Relation: manufacturer
+Head Entity1: ; Tail Entity2:
+Sentence:

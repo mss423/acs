@@ -1,0 +1,4 @@
+Generate a sentence with the given entities and relation in a diverse style.
+Head Entity: United States; Tail Entity: Chester Alan Arthur
+Relation: head of government
+Sentence:

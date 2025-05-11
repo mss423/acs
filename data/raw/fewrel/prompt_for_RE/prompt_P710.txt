@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: participant
+Relation Definition: person, group of people or organization (object) that actively takes/took part in an event or process (subject).  Preferably qualify with "object has role" (P3831). Use P1923 for participants that are teams.
+Relation: participant
+Head Entity: Eurovision Song Contest 2006; Tail Entity: Tina Karol
+Head Entity:

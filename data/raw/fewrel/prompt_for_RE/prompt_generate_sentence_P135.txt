@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: movement
+Head Entity: Peter Paul Rubens; Tail Entity: Flemish Baroque
+Sentence: The large workshops of Peter Paul Rubens and Jacob Jordaens , and the influence of Anthony van Dyck , made Antwerp the center of the Flemish Baroque .
+Relation: movement
+Head Entity1: ; Tail Entity2:
+Sentence:

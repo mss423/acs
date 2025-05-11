@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: mountain range
+Relation Definition: range or subrange to which the geographical item belongs
+Relation: mountain range
+Head Entity: Mount Korbu; Tail Entity: Titiwangsa Mountains
+Head Entity:

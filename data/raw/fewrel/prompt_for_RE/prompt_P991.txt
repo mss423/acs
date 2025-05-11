@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: successful candidate
+Relation Definition: person(s) elected after the election
+Relation: successful candidate
+Head Entity: election in 2010; Tail Entity: Terry Branstad
+Head Entity:

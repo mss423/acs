@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: distributor
+Relation Definition: distributor of a creative work; distributor for a record label
+Relation: distributor
+Head Entity: The Painted Hills; Tail Entity: MGM
+Head Entity:

@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: distributor
+Head Entity: The Painted Hills; Tail Entity: MGM
+Sentence: Following " The Painted Hills " in 1951 , MGM executives felt Lassie had run her course and planned no future films featuring the character .
+Relation: distributor
+Head Entity1: ; Tail Entity2:
+Sentence:

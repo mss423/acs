@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: subsidiary
+Relation Definition: subsidiary of a company or organization, opposite of parent organization (P749)
+Relation: subsidiary
+Head Entity: KU Leuven; Tail Entity: VIB
+Head Entity:

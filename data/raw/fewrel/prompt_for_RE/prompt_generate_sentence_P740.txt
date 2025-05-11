@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: location of formation
+Head Entity: World Federalist Movement; Tail Entity: Montreux
+Sentence: Similar movements concurrently formed in many other countries , leading to the formation , at a 1947 meeting in Montreux , Switzerland , of a global coalition , now called World Federalist Movement .
+Relation: location of formation
+Head Entity1: ; Tail Entity2:
+Sentence:

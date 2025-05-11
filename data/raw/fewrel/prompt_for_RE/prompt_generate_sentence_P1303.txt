@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: instrument
+Head Entity: Stan Getz; Tail Entity: saxophone
+Sentence: He began studying piano at an early age , but switched to saxophone in middle school after hearing a record by Stan Getz .
+Relation: instrument
+Head Entity1: ; Tail Entity2:
+Sentence:

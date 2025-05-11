@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: league
+Relation Definition: league in which team or player plays or has played in
+Relation: league
+Head Entity: FC Torpedo Vladimir; Tail Entity: Russian Professional Football League
+Head Entity:

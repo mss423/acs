@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: sports season of league or competition
+Relation Definition: property that shows the competition of which the item is a season. Use P5138 for "season of club or team".
+Relation: sports season of league or competition
+Head Entity: 1959; Tail Entity: National Football League
+Head Entity:

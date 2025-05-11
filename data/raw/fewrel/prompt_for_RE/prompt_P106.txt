@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: occupation
+Relation Definition: occupation of a person; see also "field of work" (Property:P101), "position held" (Property:P39)
+Relation: occupation
+Head Entity: Maurice Pialat; Tail Entity: film director
+Head Entity:

@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: headquarters location
+Head Entity: Museo del Novecento; Tail Entity: Arengario palace
+Sentence: It can be viewed at the Museo del Novecento in the Arengario palace near Duomo square in the centre of Milan .
+Relation: headquarters location
+Head Entity1: ; Tail Entity2:
+Sentence:

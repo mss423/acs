@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: said to be the same as
+Head Entity: Lamiaceae; Tail Entity: Labiatae
+Sentence: While he was clear about the integrity of the overall family , he was less confident about his organization of " Salvia " , the largest genus in Labiatae ( also called Lamiaceae ) .
+Relation: said to be the same as
+Head Entity1: ; Tail Entity2:
+Sentence:

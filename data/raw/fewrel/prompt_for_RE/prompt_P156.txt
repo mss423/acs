@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: followed by
+Relation Definition: immediately following item in a series of which the subject is a part [if the subject has been replaced, e.g. political offices, use "replaced by" (P1366)]
+Relation: followed by
+Head Entity: Predator 2; Tail Entity: Predators
+Head Entity:

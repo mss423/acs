@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: head of government
+Relation Definition: head of the executive power of this town, city, municipality, state, country, or other governmental body
+Relation: head of government
+Head Entity: United States; Tail Entity: Chester Alan Arthur
+Head Entity:

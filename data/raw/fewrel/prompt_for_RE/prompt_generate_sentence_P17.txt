@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: country
+Head Entity: Signal de Botrange; Tail Entity: Belgium
+Sentence: Belgium 's highest point is the Signal de Botrange at 694 meters above the sea level .
+Relation: country
+Head Entity1: ; Tail Entity2:
+Sentence:

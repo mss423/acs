@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: occupation
+Head Entity: Maurice Pialat; Tail Entity: film director
+Sentence: Cunlhat was the birthplace of Maurice Pialat ( 1925–2003 ) , film director and actor .
+Relation: occupation
+Head Entity1: ; Tail Entity2:
+Sentence:

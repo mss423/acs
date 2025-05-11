@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: father
+Relation Definition: male parent of the subject. For stepfather, use "stepparent" (P3448)
+Relation: father
+Head Entity: Margaret; Tail Entity: Odo , Count of Nevers
+Head Entity:

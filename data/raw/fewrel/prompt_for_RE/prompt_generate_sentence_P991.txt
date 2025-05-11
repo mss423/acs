@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: successful candidate
+Head Entity: election in 2010; Tail Entity: Terry Branstad
+Sentence: Christine Branstad returned for a fifth term as First Lady in 2010 following Terry Branstad 's election in 2010 .
+Relation: successful candidate
+Head Entity1: ; Tail Entity2:
+Sentence:

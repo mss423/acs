@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: position held
+Head Entity: Mitchell Hepburn; Tail Entity: Premier of Ontario
+Sentence: Mitchell Hepburn , the Premier of Ontario and John B. McNair , the Premier of New Brunswick both demanded overseas conscription in speeches attacking King .
+Relation: position held
+Head Entity1: ; Tail Entity2:
+Sentence:

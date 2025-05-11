@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: original network
+Head Entity: K - Ville; Tail Entity: FOX
+Sentence: first aired against fellow freshmen show " K - Ville " on FOX .
+Relation: original network
+Head Entity1: ; Tail Entity2:
+Sentence:

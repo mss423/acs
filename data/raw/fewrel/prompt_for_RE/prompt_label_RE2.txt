@@ -1,0 +1,133 @@
+Identify the relation between the head entity and the tail entity in the given sentence.
+Relation: place served by transport hub; mountain range; religion; participating team; contains administrative territorial entity; head of government; country of citizenship; original network; heritage designation; performer; participant of; position held; has part; location of formation; located on terrain feature; architect; country of origin; publisher; director; father; developer; military branch; mouth of the watercourse; nominated for; movement; successful candidate; followed by; manufacturer; instance of; after a work by; member of political party; licensed to broadcast to; headquarters location; sibling; instrument; country; occupation; residence; work location; subsidiary; participant; operator; characters; occupant; genre; operating system; owned by; platform; tributary; winner; said to be the same as; composer; league; record label; distributor; screenwriter; sports season of league or competition; taxon rank; location; field of work; language of work or name; applies to jurisdiction; notable work; located in the administrative territorial entity;
+#####
+Sentence: Merpati flight 106 departed Jakarta ( CGK ) on a domestic flight to Tanjung Pandan ( TJQ ) .
+the relation between TJQ and Tanjung Pandan is place served by transport hub
+Sentence: It is approximately 8 km away from Mount Korbu , the tallest mountain of the Titiwangsa Mountains .
+the relation between Mount Korbu and Titiwangsa Mountains is mountain range
+Sentence: In 1689 , Konstanty was one of the judges who sentenced Kazimierz Łyszczyński to death for atheism .
+the relation between Kazimierz Łyszczyński and atheism is religion
+Sentence: On 26 August 2016 , in his Bundesliga debut , Bayern defeated Werder Bremen 6–0 .
+the relation between Bundesliga and Werder Bremen is participating team
+Sentence: The sailor was rescued by Saudi Arabian border guards in the Red Sea and taken to Jizan Province of Saudi Arabia .
+the relation between Saudi Arabia and Jizan Province is contains administrative territorial entity
+Sentence: Chester Alan Arthur , 21st President of the United States , died of this disease , November 18 , 1886
+the relation between United States and Chester Alan Arthur is head of government
+Sentence: Vares : Private Eye ( ) is a 2004 Finnish crime film directed by Aleksi Mäkelä .
+the relation between Aleksi Mäkelä and Finnish is country of citizenship
+Sentence: first aired against fellow freshmen show " K - Ville " on FOX .
+the relation between K - Ville and FOX is original network
+Sentence: The property , including Drummers ' Building and sidewalk , was added to the National Register of Historic Places on June 17 , 1982 , as " Jaeckel Hotel " .
+the relation between Jaeckel Hotel and National Register of Historic Places is heritage designation
+Sentence: The song has been recorded by the German power metal band Helloween as a track on their 1995 CD single " Sole Survivor " .
+the relation between Sole Survivor and Helloween is performer
+Sentence: At the 1992 Summer Olympics in Barcelona he received a bronze medal in the Flying Dutchman , together with his cousin Jens Bojsen - Møller .
+the relation between Jens Bojsen - Møller and 1992 Summer Olympics is participant of
+Sentence: Mitchell Hepburn , the Premier of Ontario and John B. McNair , the Premier of New Brunswick both demanded overseas conscription in speeches attacking King .
+the relation between Mitchell Hepburn and Premier of Ontario is position held
+Sentence: In " The Telling " , Terra 's incorporation into the Ekumen is briefly explained .
+the relation between Ekumen and The Telling is has part
+Sentence: Similar movements concurrently formed in many other countries , leading to the formation , at a 1947 meeting in Montreux , Switzerland , of a global coalition , now called World Federalist Movement .
+the relation between World Federalist Movement and Montreux is location of formation
+Sentence: The island lies between Kanatadika on Euboea and the mainland near Achilleio , Magnesia .
+the relation between Kanatadika and Euboea is located on terrain feature
+Sentence: Pythius and Satyros were the co - designers of the great Mausoleum at Halicarnassus on the Aegean Sea opposite Greece , with Pythius being credited with the great marble quadriga which surmounted the mausoleum .
+the relation between Mausoleum at Halicarnassus and Satyros is architect
+Sentence: Turn It Upside Down is the second studio album and fourth release overall by American rock band Spin Doctors , released in 1994 .
+the relation between Spin Doctors and American is country of origin
+Sentence: Financial and contractual problems prevented agreement and , instead , ESP contracted with Elsevier leading to the publication of the Journal of Photochemistry and Photobiology in 1987 .
+the relation between Journal of Photochemistry and Photobiology and Elsevier is publisher
+Sentence: Cheryl Barnes is a singer who starred in Miloš Forman ’s 1979 film adaptation of " Hair " as the mother of Hud ’s little son .
+the relation between Hair and Miloš Forman is director
+Sentence: Matilda II died five years later , in 1262 , and her husband Odo , Count of Nevers divided the three counties between her daughters Yolande , Margaret and Adelaide .
+the relation between Margaret and Odo , Count of Nevers is father
+Sentence: " Resonance of Fate " marked the first collaboration between tri - Ace and Sega — most of tri - Ace 's previous games had been published by Square Enix .
+the relation between Resonance of Fate and tri - Ace is developer
+Sentence: Among the students at the Nagasaki Naval Training Center was Enomoto Takeaki , one of the founders of the Imperial Japanese Navy .
+the relation between Enomoto Takeaki and Imperial Japanese Navy is military branch
+Sentence: The Peel watershed drains 14 % of the Yukon Territory Canada and flows into the Beaufort Sea via the Peel and then Mackenzie Rivers .
+the relation between Mackenzie and Beaufort Sea is mouth of the watercourse
+Sentence: " A Star is Born " was the first color film to receive a Best Picture nomination .
+the relation between A Star is Born and Best Picture is nominated for
+Sentence: The large workshops of Peter Paul Rubens and Jacob Jordaens , and the influence of Anthony van Dyck , made Antwerp the center of the Flemish Baroque .
+the relation between Peter Paul Rubens and Flemish Baroque is movement
+Sentence: Christine Branstad returned for a fifth term as First Lady in 2010 following Terry Branstad 's election in 2010 .
+the relation between election in 2010 and Terry Branstad is successful candidate
+Sentence: It is the fourth installment in the " Predator " film series , set to take place between " Predator 2 " ( 1990 ) and " Predators " ( 2010 ) .
+the relation between Predator 2 and Predators is followed by
+Sentence: Notable exhibitors included the company iRobot , creators of Roomba , and NASA .
+the relation between Roomba and iRobot is manufacturer
+Sentence: Logic Express was a " light " version of Logic Pro , a MIDI sequencer and digital audio workstation software application maintained by Apple that runs on the Mac OS X platform .
+the relation between Logic Pro and digital audio workstation is instance of
+Sentence: The Bread of Those Early Years ( ) is a 1955 novel by the West German writer Heinrich Böll .
+the relation between Bread of Those Early Years and Heinrich Böll is after a work by
+Sentence: Rempel became involved in politics with the riding association of Diane Ablonczy , and she later served as president of the Conservative Party riding executive for her riding of Calgary — Nose Hill .
+the relation between Diane Ablonczy and Conservative Party is member of political party
+Sentence: In November 2015 , WSJO added the programming of WPGG 1450 Atlantic City on HD2 , and WJPH / WJPG 's Praise FM on HD3 .
+the relation between WPGG and Atlantic City is licensed to broadcast to
+Sentence: It can be viewed at the Museo del Novecento in the Arengario palace near Duomo square in the centre of Milan .
+the relation between Museo del Novecento and Arengario palace is headquarters location
+Sentence: His family met William Thackeray and Charles Dickens on their American tours , and James even remembered Thackeray mock - scolding his sister Alice for her crinoline dress : " Crinoline ?
+the relation between William and Alice is sibling
+Sentence: He began studying piano at an early age , but switched to saxophone in middle school after hearing a record by Stan Getz .
+the relation between Stan Getz and saxophone is instrument
+Sentence: Belgium 's highest point is the Signal de Botrange at 694 meters above the sea level .
+the relation between Signal de Botrange and Belgium is country
+Sentence: Cunlhat was the birthplace of Maurice Pialat ( 1925–2003 ) , film director and actor .
+the relation between Maurice Pialat and film director is occupation
+Sentence: Wong Fei - hung plans to return to Foshan with his father Wong Kei - ying and apprentices Leung Foon and Clubfoot .
+the relation between Wong Kei - ying and Foshan is residence
+Sentence: Shortly after his arrival in Marrakesh , Ibn Tumart is said to have successfully sought out the Almoravid ruler Ali ibn Yusuf at a local mosque .
+the relation between Ibn Tumart and Marrakesh is work location
+Sentence: He is head of the " VIB Department of Molecular Biology , KU Leuven " .
+the relation between KU Leuven and VIB is subsidiary
+Sentence: In 2007 Yurii Barybin was invited to hold a technical director and production manager positions for Tina Karol - singer , songwriter , Eurovision Song Contest 2006 Ukrainian representative .
+the relation between Eurovision Song Contest 2006 and Tina Karol is participant
+Sentence: The South Dakota Cultural Heritage Center in Pierre , South Dakota is the headquarters of the South Dakota State Historical Society .
+the relation between South Dakota Cultural Heritage Center and South Dakota State Historical Society is operator
+Sentence: Actress Sally Hawkins was asked to play " Persuasion 's " protagonist Anne Elliot .
+the relation between Persuasion and Anne Elliot is characters
+Sentence: The ECHL 's Kansas City Mavericks currently play at the suburban Silverstein Eye Centers Arena in Independence , Missouri .
+the relation between Silverstein Eye Centers Arena and Kansas City Mavericks is occupant
+Sentence: Trailer Bride was a Chapel Hill , North Carolina - based alternative country rock band signed to Bloodshot Records .
+the relation between Trailer Bride and alternative country is genre
+Sentence: This has caused the development of new digital typesetting techniques such as OpenType , and the incorporation of ligature support into the text display systems of macOS , Windows and applications like Microsoft Office .
+the relation between Microsoft Office and macOS is operating system
+Sentence: Amityville is the westernmost station on the Babylon Branch of the Long Island Rail Road in Suffolk County , New York .
+the relation between Babylon Branch and Long Island Rail Road is owned by
+Sentence: For instance , Firebird created the Commodore 64 releases of " Sabre Wulf " and " Underwurlde " .
+the relation between Sabre Wulf and Commodore 64 is platform
+Sentence: The east side of Grace Peak drains into Lindsay Brook , thence into the Schroon River , the Hudson River , and into New York Bay .
+the relation between Hudson River and Schroon River is tributary
+Sentence: In 1961 he guided Fiorentina to victory in the first ever European Cup Winners ' Cup , beating Rangers 4–1 on aggregate in the final .
+the relation between the first ever and Fiorentina is winner
+Sentence: While he was clear about the integrity of the overall family , he was less confident about his organization of " Salvia " , the largest genus in Labiatae ( also called Lamiaceae ) .
+the relation between Lamiaceae and Labiatae is said to be the same as
+Sentence: Rahman made a clean sweep of all the music awards that year except the National Film Award for Best Music Direction which went to Ismail Darbar for " Hum Dil De Chuke Sanam " .
+the relation between Hum Dil De Chuke Sanam and Ismail Darbar is composer
+Sentence: He made his debut in the Russian Professional Football League for FC Lokomotiv - Kazanka Moscow on 3 August 2017 in a game against FC Torpedo Vladimir .
+the relation between FC Torpedo Vladimir and Russian Professional Football League is league
+Sentence: The Very Air We Breathe is the first album from Pop punk / Electronica band Driver side impact released in 2007 under Victory Records .
+the relation between Driver side impact and Victory Records is record label
+Sentence: Following " The Painted Hills " in 1951 , MGM executives felt Lassie had run her course and planned no future films featuring the character .
+the relation between The Painted Hills and MGM is distributor
+Sentence: " Citizen Khan " is written by Anil Gupta and Richard Pinto ( " The Kumars at No 42 " , " Goodness Gracious Me " ) with Adil Ray .
+the relation between Citizen Khan and Anil Gupta is screenwriter
+Sentence: The 1959 Los Angeles Rams season was the team 's 22nd year with the National Football League and the 14th season in Los Angeles .
+the relation between 1959 and National Football League is sports season of league or competition
+Sentence: Polietes is a genus from the fly family Muscidae .
+the relation between Muscidae and family is taxon rank
+Sentence: Links Verlag , 2008 . , p. 469 In another incident , on 27 September , Cham militias arrested 53 Greek citizens in Paramythia and executed 49 of them two days later .
+the relation between executed 49 of them and Paramythia is location
+Sentence: It was first described by German botanist Conrad Moench .
+the relation between Conrad Moench and botanist is field of work
+Sentence: Japanese video sharing website Niconico played a fundamental role in the recognition and popularity of the software .
+the relation between Niconico and Japanese is language of work or name
+Sentence: In April 2014 , the European Court of Justice ruled that the European Union 's Data Retention Directive was invalid .
+the relation between European Court of Justice and European Union is applies to jurisdiction
+Sentence: Devaki Nandan Khatri , who at the beginning of the 20th century wrote novels including " Chandrakanta " and " Chandrakanta Santati " , was born in Muzaffarpur , Bihar .
+the relation between Devaki Nandan Khatri and Chandrakanta is notable work
+Sentence: Downing House is a historic home located at Memphis , Scotland County , Missouri .
+the relation between Memphis and Scotland County , Missouri is located in the administrative territorial entity
+Sentence1:
+the relation between Entity1 and Entity2 is

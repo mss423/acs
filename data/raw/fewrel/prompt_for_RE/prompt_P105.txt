@@ -1,0 +1,6 @@
+Generate 50 different Head Entity and Tail Entity with the given Relation.
+Relation: taxon rank
+Relation Definition: level in a taxonomic hierarchy
+Relation: taxon rank
+Head Entity: Muscidae; Tail Entity: family
+Head Entity:

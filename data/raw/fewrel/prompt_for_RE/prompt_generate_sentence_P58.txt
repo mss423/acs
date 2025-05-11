@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: screenwriter
+Head Entity: Citizen Khan; Tail Entity: Anil Gupta
+Sentence: " Citizen Khan " is written by Anil Gupta and Richard Pinto ( " The Kumars at No 42 " , " Goodness Gracious Me " ) with Adil Ray .
+Relation: screenwriter
+Head Entity1: ; Tail Entity2:
+Sentence:

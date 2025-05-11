@@ -1,0 +1,7 @@
+Generate a sentence with the given entities and relation.
+Relation: subsidiary
+Head Entity: KU Leuven; Tail Entity: VIB
+Sentence: He is head of the " VIB Department of Molecular Biology , KU Leuven " .
+Relation: subsidiary
+Head Entity1: ; Tail Entity2:
+Sentence:
