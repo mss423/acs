@@ -453,8 +453,8 @@ class Dataset:
                 sentence_id += 1
             else:
                 token, label = line.strip().split()  # Extract word, ignore label
-                tokens.append(token)
-                labels.append(label)
+                # tokens.append(token)
+                # labels.append(label)
                 data.append([sentence_id, token, label])
         return pd.DataFrame(data, columns=['sentence_id', 'sentence', 'label']), None
         # return pd.DataFrame({"sentence": tokens, "label": labels}), None
