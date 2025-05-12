@@ -316,16 +316,17 @@ class Dataset:
             print(test_error)
             return
 
-    def _load_crossner_data(self, getSentences=True):
+    def _load_crossner_data(self):
         print("Loading FewRel data...")
         # --- Get config parameters ---
-        train_path  = os.path.join(self.config.get('train_path'), 'train.txt')
-        dev_path    = os.path.join(self.config.get('train_path'), 'dev.txt')
-        test_path   = os.path.join(self.config.get('test_path'), 'test.txt') # Test path is optional
-        text_col    = 'sentence'
-        label_col   = 'label'
-        separator   = '\t'
-        encoding    = 'utf-8'
+        train_path   = os.path.join(self.config.get('train_path'), 'train.txt')
+        dev_path     = os.path.join(self.config.get('train_path'), 'dev.txt')
+        test_path    = os.path.join(self.config.get('test_path'), 'test.txt') # Test path is optional
+        getSentences = self.config.get('getSentences', True)
+        text_col     = 'sentence'
+        label_col    = 'label'
+        separator    = '\t'
+        encoding     = 'utf-8'
 
         if not train_path or not test_path:
             self.error = "Error: Missing required config for data loading: 'train_path', 'test_path'."
@@ -429,7 +430,7 @@ class Dataset:
         if current_sentence:
             sentences.append(' '.join(current_sentence))
 
-        return pd.DataFrame({"sentence": sentences})
+        return pd.DataFrame({"sentence": sentences}), None
 
     def _load_crossner_tokens(self, path, dev=False):
         with open(path, 'r') as f:
@@ -446,7 +447,7 @@ class Dataset:
             else:
                 token, label = line.strip().split()  # Extract word, ignore label
                 data.append([sentence_id, token, label])
-        return data
+        return data, None
 
 
     # ------ FewRel Data Functions ------- #
