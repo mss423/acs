@@ -316,6 +316,48 @@ class Dataset:
             print(test_error)
             return
 
+    def _load_crossner_data(self, getSentences=True):
+        print("Loading FewRel data...")
+        # --- Get config parameters ---
+        train_path  = os.path.join(self.config.get('train_path'), 'train.txt')
+        dev_path    = os.path.join(self.config.get('train_path'), 'dev.txt')
+        test_path   = os.path.join(self.config.get('test_path'), 'test.txt') # Test path is optional
+        text_col    = 'sentence'
+        label_col   = 'label'
+        separator   = '\t'
+        encoding    = 'utf-8'
+
+        if not train_path or not test_path:
+            self.error = "Error: Missing required config for data loading: 'train_path', 'test_path'."
+            print(self.error)
+            return
+
+        if getSentences:
+            # --- Load Training Data --- #
+            train_split, train_error = self._load_crossner_sentences(train_path)
+            dev_split, train_error   = self._load_crossner_sentences(dev_path)
+            self.train_df = pd.concat([train_split, dev_split], ignore_index=True)
+
+            # --- Load Test Data ---
+            self.test_df, test_error = self._load_crossner_sentences(test_path)
+        else:
+            # --- Load Training Data --- #
+            train_split, train_error = self._load_crossner_tokens(train_path)
+            dev_split, train_error   = self._load_crossner_tokens(dev_path, dev=True)
+            self.train_df = pd.concat([train_split, dev_split], ignore_index=True)
+
+            # --- Load Test Data ---
+            self.test_df, test_error = self._load_crossner_tokens(test_path)
+
+
+        if train_error:
+            print(train_error)
+            return
+
+        if test_error:
+            print(test_error)
+            return
+
     def _load_csv_data(self):
         """
         Loads training and testing data from CSV files based on self.config.
@@ -367,7 +409,7 @@ class Dataset:
 
 
     # ------ CrossNER Data Functions ------ #
-    def load_crossner_sentences(self, path):
+    def _load_crossner_sentences(self, path):
         with open(path, 'r') as f:
             lines = f.readlines()
 
@@ -389,7 +431,7 @@ class Dataset:
 
         return pd.DataFrame({"sentence": sentences})
 
-    def load_crossner_train(self, path, dev=False):
+    def _load_crossner_tokens(self, path, dev=False):
         with open(path, 'r') as f:
             lines = f.readlines()
 
