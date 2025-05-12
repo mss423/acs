@@ -1,0 +1,9 @@
+Researcher: The researcher entity. A researcher is a person who carries out academic or scientific research. 
+Researcher: David Silver, Fei-Fei Li, Claude Shannon, Marvin Minsky, Ruslan Salakhutdinov
+Generate 15 different researchers in the AI domain.
+Researcher:
+1. David Silver
+2. Fei-Fei Li
+3. Claude Shannon
+4. Marvin Minsky
+5. Ruslan Salakhutdinov

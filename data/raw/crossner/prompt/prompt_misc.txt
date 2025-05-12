@@ -1,0 +1,9 @@
+Misc: An entity needs to be classified as the miscellaneous type if it does not belong to any other category. It is of various types or from different sources. It includes awards, nationalities, brands, and technical terms. 
+Examples: Nobel Award, IEEE Signal Processing Society Sustained Impact Award, Best Paper Award, Test-of-Time awards, Best Reviewer Award
+Generate 15 different Misc entities in the AI domain
+Misc:
+1. Nobel Award
+2. IEEE Signal Processing Society Sustained Impact Award
+3. Best Paper Award
+4. Test-of-Time awards
+5. Best Reviewer Award

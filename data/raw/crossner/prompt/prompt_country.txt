@@ -1,0 +1,9 @@
+Country: The country entity. Country is a nation with its own government, occupying a particular territory.
+Examples: 1. United Kingdom 2. United States 3. Japan 4. Hong Kong 5. Australia
+Generate 15 different Country entities in the AI domain.
+Country:
+1. United Kingdom
+2. United States
+3. Japan
+4. Hong Kong
+5. Australia

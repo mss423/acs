@@ -1,0 +1,9 @@
+Location: The location entity, including place, bridge, city, county and etc. A location is a particular place or position.
+Examples: 1. Times Square 2. Beijing 3. New York 4. Empire State Building 5. London Bridge
+Generate 15 different Location entities in the general domain.
+Location:
+1. Times Square
+2. Beijing
+3. New York
+4. Empire State Building
+5. London Bridge

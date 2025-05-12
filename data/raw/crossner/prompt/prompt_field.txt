@@ -1,0 +1,9 @@
+Field: The research field entity. It is a particular branch of study or sphere of activity or interest.
+Examples: machine learning, deep learning, and natural language processing, computer vision, text mining, etc.
+Generate 15 different Field entities in the AI domain.
+Field: 
+1. machine learning
+2. deep learning
+3. natural language processing
+4. computer vision
+5. reinforcement learning

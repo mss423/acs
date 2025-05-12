@@ -1,0 +1,9 @@
+University is a high-level educational institution in which students study for degrees and academic research is done.
+Examples: Stanford University, UCLA, CMU, MIT, UCL
+Generate 100 different University entities in the AI domain.
+University:
+1. Stanford University
+2. UCLA
+3. CMU
+4. MIT
+5. UCL

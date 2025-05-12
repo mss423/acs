@@ -1,0 +1,9 @@
+Person:  The name of a person should be annotated as a person entity. A person is a human being regarded as an individual.
+Examples: Kenye West, Michael Jackson, Adele, Billie Eilish, Donald Trump, Elon Musk
+Generate 15 different Person entities in the general domain.
+Person:
+1. Kenye West
+2. Michael Jackson
+3. Adele
+4. Billie Eillish
+5. Donald Trump

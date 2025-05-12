@@ -1,0 +1,9 @@
+Conference: The conference entity. It contains conference and journal entities. Conference is a formal meeting of people with a shared interest, typically one that takes place over several days.
+Examples: 1. AAAI 2. ICLR 3. ECCV 2017 4. ACL 5. 2018 Conference on Neural Information Processing Systems 6. ICML
+Generate 15 different Conference entities in the AI domain.
+Conference:
+1. AAAI
+2. ICLR
+3. ECCV 2017
+4. ACL
+5. 2018 Conference on Neural Information Processing Systems

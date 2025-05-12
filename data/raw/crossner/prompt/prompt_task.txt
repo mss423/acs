@@ -1,0 +1,9 @@
+Task: The specific task entity in the research field, such as machine translation and object detection. It is used for training and evaluating AI systems, which are built in order to perform and automatize tasks we deem useful.
+Examples: sentiment analysis, question answering, image segmentation, NER, image classification, etc.
+Generate 15 different task entities in the AI domain. 
+Task:
+1. sentiment analysis
+2. question answering
+3. image segmentation
+4. NER
+5. image classification

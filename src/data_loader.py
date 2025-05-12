@@ -441,9 +441,9 @@ class Dataset:
         with open(path, 'r') as f:
             lines = f.readlines()
 
-        # data = []
-        tokens = []
-        labels = []
+        data = []
+        # tokens = []
+        # labels = []
         sentence_id = 0
         if dev: 
             sentence_id += 2700
@@ -455,9 +455,9 @@ class Dataset:
                 token, label = line.strip().split()  # Extract word, ignore label
                 tokens.append(token)
                 labels.append(label)
-                # data.append([sentence_id, token, label])
-        # return data, None
-        return pd.DataFrame({"sentence": tokens, "label": labels})
+                data.append([sentence_id, token, label])
+        return pd.DataFrame(data, columns=['sentence_id', 'sentence', 'label']), None
+        # return pd.DataFrame({"sentence": tokens, "label": labels}), None
 
 
     # ------ FewRel Data Functions ------- #

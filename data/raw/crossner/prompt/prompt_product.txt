@@ -1,0 +1,9 @@
+Product: The product entity that includes the product (e.g., a certain kind of robot like Pepper), system (e.g., facial recognition system) and toolkit (e.g., Tensorflow and PyTorch). A product is an article or substance that is manufactured or refined for sale.
+Examples: Apple's Siri, Google Home, Pytorch, Tensorflow, Grammarly, MATLAB
+Generate 15 different Product entities in the AI domain.
+Product:
+1. Apple's Siri
+2. Google Home
+3. Pytorch
+4. Tensorflow
+5. Grammarly

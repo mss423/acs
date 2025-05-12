@@ -1,0 +1,9 @@
+Algorithm: The algorithm entity. It contains algorithms (e.g., decision trees) and models (e.g, CNN and LSTM). Algorithm is a process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.
+Examples: Decision Trees, Support Vector Machine, CNN, LSTM, RNN, gradient descent
+Generate 15 different Algorithm entities in the AI domain.
+Algorithm:
+1. Decision Trees
+2. Support Vector Machine
+3. CNN
+4. LSTM
+5. RNN

@@ -1,0 +1,9 @@
+Metrics: The evaluation metrics, such as F1-score. Metrics is a system or standard of measurement.
+Examples: F1-score, Recall-Oriented Understudy for Gisting Evaluation, Accuracy, MAE, Bilingual evaluation understudy, BLEU, R-square
+Generate 15 different Metrics entities in the AI domain.
+Metrics:
+1. F1-score
+2. Recall-Oriented Understudy for Gisting Evaluation
+3. Accuracy
+4. MAE
+5. Bilingual evaluation understudy

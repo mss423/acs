@@ -1,0 +1,9 @@
+Programming Language: The programming language, such as Java and Python. A programming language is a way for programmers (developers) to communicate with computers. 
+Examples: Python, Java, R, C++, C#
+Generate 15 different Programming Language entities in the AI domain.
+Programming Language:
+1. Python
+2. Java
+3. R
+4. C++
+5. C#

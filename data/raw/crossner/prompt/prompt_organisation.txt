@@ -1,0 +1,9 @@
+Organisation: An organized group of people with a particular purpose, such as a business or government department. Organisation is a group of people who work together in an organized way for a shared purpose. 
+Examples: iRobot, Toshiba, Association for Computational Linguistics, British Academy, Wall Street Journal, Alibaba Group, WHO
+Generate 15 different Organisation entities in the AI, Technology and Business domain.
+Organisation:
+1. iRobot
+2. Toshiba
+3. Association for Computational Linguistics
+4. British Academy
+5. Wall Street Journal
