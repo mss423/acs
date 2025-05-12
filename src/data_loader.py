@@ -180,7 +180,10 @@ class Dataset:
                  # return False # Uncomment if test data is strictly required
 
             # Calculate number of labels from training data
-            self.num_labels = self.train_df['label'].nunique()
+            if self.name == 'crossner':
+                self.num_labels = 16
+            else:
+                self.num_labels = self.train_df['label'].nunique()
             print(f"Calculated number of unique labels: {self.num_labels}")
 
             print(f"Data loading successful for '{self.name}'.")
@@ -317,7 +320,7 @@ class Dataset:
             return
 
     def _load_crossner_data(self):
-        print("Loading FewRel data...")
+        print("Loading CrossNER data...")
         # --- Get config parameters ---
         train_path   = os.path.join(self.config.get('train_path'), 'train.txt')
         dev_path     = os.path.join(self.config.get('train_path'), 'dev.txt')
@@ -415,12 +418,14 @@ class Dataset:
             lines = f.readlines()
 
         sentences = []
+        labels = []
         current_sentence = []
 
         for line in lines:
             if line.strip() == '':  # Empty line indicates end of sentence
                 if current_sentence:
                     sentences.append(' '.join(current_sentence))
+                    labels.append(None)
                     current_sentence = []
             else:
                 word, _ = line.strip().split()  # Extract word, ignore label
@@ -430,13 +435,15 @@ class Dataset:
         if current_sentence:
             sentences.append(' '.join(current_sentence))
 
-        return pd.DataFrame({"sentence": sentences}), None
+        return pd.DataFrame({"sentence": sentences, "label": labels}), None
 
     def _load_crossner_tokens(self, path, dev=False):
         with open(path, 'r') as f:
             lines = f.readlines()
 
-        data = []
+        # data = []
+        tokens = []
+        labels = []
         sentence_id = 0
         if dev: 
             sentence_id += 2700
@@ -446,8 +453,11 @@ class Dataset:
                 sentence_id += 1
             else:
                 token, label = line.strip().split()  # Extract word, ignore label
-                data.append([sentence_id, token, label])
-        return data, None
+                tokens.append(token)
+                labels.append(label)
+                # data.append([sentence_id, token, label])
+        # return data, None
+        return pd.DataFrame({"sentence": tokens, "label": labels})
 
 
     # ------ FewRel Data Functions ------- #
