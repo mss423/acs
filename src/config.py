@@ -54,7 +54,7 @@ MODEL_ARGS = {
     # "max_seq_length": 128, # Max token length; adjust based on your data and model limits
 
     # --- Evaluation ---
-    "evaluate_during_training": True,
+    "evaluate_during_training": False,#True,
     "evaluate_during_training_steps": 500, # Evaluate every N steps
     "evaluate_during_training_verbose": True,
     "eval_batch_size": 32,
