@@ -139,7 +139,7 @@ def train(
                     eval_df
                     # report=classification_report
                 )
-            if num_labels == 16:
+            elif num_labels == 16:
                 result, model_outputs, wrong_predictions = model.eval_model(
                     eval_df
                 )
