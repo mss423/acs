@@ -78,7 +78,7 @@ def train(
         args['num_train_epochs'] = kwargs.get('num_train_epochs', 3)
         args['train_batch_size'] = kwargs.get('train_batch_size', 16)
         args['manual_seed']      = kwargs.get('manual_seed', 42)
-        args['is_crossner']      = kwargs.get('is_crossner', False)
+        is_crossner              = kwargs.get('is_crossner', False)
 
         if is_crossner:
             args['labels_list'] = CROSSNER_LABELS
