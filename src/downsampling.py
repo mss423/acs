@@ -67,6 +67,7 @@ def sample_score(
     Raises:
         NotImplementedError: This is a placeholder.
     """
+    dataset = kwargs.get('dataset', 'sst2')
     score_method = kwargs.get('score_method', 'aum')
     print(f"--> Called sample_score with k_samples={k_samples}, score_method={score_method}")
     if k_samples > len(data):
@@ -74,7 +75,7 @@ def sample_score(
         return data.copy()
 
     try:
-        score_file = os.path.join(config.PROCESSED_DATA_DIR, "sst2/" + score_method + "_sst2.pkl")
+        score_file = os.path.join(config.PROCESSED_DATA_DIR, f"{dataset}/{score_method}_{dataset}.pkl")
         with open(score_file, "rb") as f:
             score_idx = pickle.load(f)
         return data.iloc[score_idx[:k_samples]]
