@@ -83,6 +83,7 @@ def train(
 
         if is_crossner:
             args['labels_list'] = CROSSNER_LABELS
+            args['evaluate_during_training'] = False
             model = NERModel(
                 model_type=config.MODEL_TYPE,
                 model_name="bert-base-cased",
@@ -137,8 +138,8 @@ def train(
                 result, model_outputs, wrong_predictions = model.eval_model(
                     eval_df,
                     report=classification_report, # Pass function for detailed report
-                    acc=lambda y_true, y_pred: accuracy_score(y_true, y_pred, average='weighted'),
-                    f1=lambda y_true, y_pred: f1_score(y_true, y_pred, average='weighted')
+                    # acc=lambda y_true, y_pred: accuracy_score(y_true, y_pred, average='weighted'),
+                    # f1=lambda y_true, y_pred: f1_score(y_true, y_pred, average='weighted')
                 )
             else:
                 result, model_outputs, wrong_predictions = model.eval_model(
