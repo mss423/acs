@@ -107,6 +107,7 @@ def sample_acs(
     coverage = kwargs.get('coverage', 0.9)
     sim_lb = kwargs.get('sim_lb', 0)
     max_degree = kwargs.get('max_degree', int((5 * len(data) * coverage) / k_samples))
+    isCrossner = kwargs.get('isCrossner', False)
 
     print(f"--> Called sample_acs with k_samples={k_samples}")
     print(f"    ACS Parameters: coverage={coverage}, sim_lb={sim_lb}, max_degree={max_degree}")
@@ -123,7 +124,10 @@ def sample_acs(
         print(f"No embedding data found, recomputing...")
         cos_sim = cosine_similarity(get_embeddings_task(data['sentence']))
 
-    selected_samples = get_acs_k(cos_sim, data['label'], k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
+    if isCrossner:
+        elected_samples = get_acs_k(cos_sim, None, k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
+    else:
+        selected_samples = get_acs_k(cos_sim, data['label'], k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
     return data.iloc[selected_samples]
 
 

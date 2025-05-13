@@ -32,7 +32,7 @@ def get_embeddings_task(texts, task='CLUSTERING', batch_size=32):
     return embs
 
 # ACS Execution
-def get_acs_k(cos_sim, labels, K, max_degree=None, sim_lb=707, coverage=0.9):
+def get_acs_k(cos_sim, labels, K, max_degree=None, sim_lb=0, coverage=0.9):
     _, _, selected_samples, _ = binary_similarity_search(cos_sim, K, coverage, labels=labels, max_degree=max_degree, sim_lb=sim_lb)
     return selected_samples
 
