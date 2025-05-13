@@ -139,6 +139,9 @@ def train(
                     eval_df
                     # report=classification_report
                 )
+                pred = model_outputs.argmax(-1).tolist()
+                gold = eval_df["label"].tolist()
+                return classification_report(gold, pred, output_dict=True, zero_division=0.0)
             elif num_labels == 16:
                 result, model_outputs, wrong_predictions = model.eval_model(
                     eval_df
