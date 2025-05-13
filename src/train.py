@@ -130,12 +130,20 @@ def train(
     if eval_df is not None and not eval_df.empty:
         print("\n--- Evaluating Model on Provided Eval Set ---")
         try:
-            result, model_outputs, wrong_predictions = model.eval_model(
-                eval_df,
-                report=classification_report, # Pass function for detailed report
-                acc=accuracy_score,
-                f1=f1_score
-            )
+            if num_labels > 2:
+                result, model_outputs, wrong_predictions = model.eval_model(
+                    eval_df,
+                    report=classification_report, # Pass function for detailed report
+                    acc=lambda y_true, y_pred: accuracy_score(y_true, y_pred, average='weighted'),
+                    f1=lambda y_true, y_pred: f1_score(y_true, y_pred, average='weighted')
+                )
+            else:
+                result, model_outputs, wrong_predictions = model.eval_model(
+                    eval_df,
+                    report=classification_report, # Pass function for detailed report
+                    acc=accuracy_score,
+                    f1=f1_score
+                )
 
             # Before printing or saving as JSON
             result = {k: v.item() if isinstance(v, np.int64) else v for k, v in result.items()} 
