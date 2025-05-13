@@ -100,6 +100,8 @@ def max_cover_sampling(graph, k):
       if not nodes:
         break
       max_cover_node = max([node for node in nodes if node not in covered_nodes], key=lambda n: len(set(graph.neighbors(n)) - covered_nodes))
+      # DEBUG
+      print(f"Selected node has degree {len(set(graph.neighbors(max_cover_node)) - covered_nodes)}")
       selected_nodes.add(max_cover_node)
       covered_nodes.update(graph.neighbors(max_cover_node))
 
