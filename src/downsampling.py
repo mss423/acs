@@ -125,7 +125,7 @@ def sample_acs(
         cos_sim = cosine_similarity(get_embeddings_task(data['sentence']))
 
     if isCrossner:
-        elected_samples = get_acs_k(cos_sim, None, k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
+        selected_samples = get_acs_k(cos_sim, None, k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
     else:
         selected_samples = get_acs_k(cos_sim, data['label'], k_samples, max_degree=max_degree, sim_lb=sim_lb, coverage=coverage)
     return data.iloc[selected_samples]

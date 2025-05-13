@@ -155,9 +155,9 @@ def binary_similarity_search(data, num_samples, coverage, max_degree=None, epsil
             sim_lower = sim
         sim = (sim_upper + sim_lower) / 2
         # DEBUG
-        print("  ! ============== DEBUG ============== ! ")
-        print(f" ! === No Samples = {len(samples)} === !")
-        print(f" ! == Coverage = {current_coverage} == ! ")
+        # print("  ! ============== DEBUG ============== ! ")
+        # print(f" ! === No Samples = {len(samples)} === !")
+        # print(f" ! == Coverage = {current_coverage} == ! ")
 
     print(f"Completed with similarity threshold = {sim/1000}")
     return sim / 1000, node_graph, samples, current_coverage
