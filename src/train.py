@@ -136,8 +136,8 @@ def train(
         try:
             if num_labels == 64:
                 result, model_outputs, wrong_predictions = model.eval_model(
-                    eval_df,
-                    report=classification_report
+                    eval_df
+                    # report=classification_report
                 )
             if num_labels == 16:
                 result, model_outputs, wrong_predictions = model.eval_model(
