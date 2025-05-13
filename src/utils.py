@@ -77,7 +77,8 @@ def build_graph(cos_sim, sim_thresh=0.0, max_degree=None, labels=None):
 
             diff = len(neighbors) - max_degree
             if diff > 0:
-                last_k_nodes = neighbors[diff:]
+                # last_k_nodes = neighbors[diff:]
+                last_k_nodes = neighors[max_degree:]
                 edges_to_remove = []
                 for j in last_k_nodes:
                     edges_to_remove.append((i, j))
