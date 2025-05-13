@@ -112,10 +112,13 @@ def train(
     try:
         # The train_model method handles evaluation during training if configured
         # and if eval_df is provided
-        model.train_model(
-            train_df=train_df,
-            eval_df=eval_df # Pass the prepared validation/test set
-        )
+        if is_crossner:
+            model.train_model(train_df)
+        else:
+            model.train_model(
+                train_df=train_df,
+                eval_df=eval_df # Pass the prepared validation/test set
+            )
         print("--- Training Finished ---")
 
     except Exception as e:
