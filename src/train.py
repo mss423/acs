@@ -18,6 +18,14 @@ from simpletransformers.classification import ClassificationModel
 from sklearn.model_selection import train_test_split # For creating validation set if needed
 from sklearn.metrics import classification_report, accuracy_score, f1_score # For evaluation
 
+CROSSNER_LABELS = ['B-researcher', 'I-researcher', 'O', 'B-product', 'B-algorithm',
+       'I-algorithm', 'B-conference', 'I-conference', 'B-field',
+       'I-field', 'B-metrics', 'B-location', 'I-location', 'B-country',
+       'I-metrics', 'I-country', 'B-person', 'I-person', 'B-programlang',
+       'B-organisation', 'B-university', 'I-university', 'B-misc',
+       'I-misc', 'B-task', 'I-task', 'I-product', 'I-organisation',
+       'I-programlang']
+
 
 def set_seed(seed: int):
     """Sets the random seed for reproducibility."""
@@ -70,14 +78,25 @@ def train(
         args['num_train_epochs'] = kwargs.get('num_train_epochs', 3)
         args['train_batch_size'] = kwargs.get('train_batch_size', 16)
         args['manual_seed']      = kwargs.get('manual_seed', 42)
+        args['is_crossner']      = kwargs.get('is_crossner', False)
 
-        model = ClassificationModel(
-            model_type=config.MODEL_TYPE,
-            model_name=config.MODEL_NAME,
-            num_labels=num_labels,
-            args=config.MODEL_ARGS,
-            use_cuda=use_cuda # Use the checked value
-        )
+        if is_crossner:
+            args['labels_list'] = CROSSNER_LABELS
+            model = NERModel(
+                model_type=config.MODEL_TYPE,
+                model_name="bert-base-cased",
+                args=args,
+                use_cuda=use_cuda
+
+            )
+        else:
+            model = ClassificationModel(
+                model_type=config.MODEL_TYPE,
+                model_name=config.MODEL_NAME,
+                num_labels=num_labels,
+                args=args,#config.MODEL_ARGS,
+                use_cuda=use_cuda # Use the checked value
+            )
         print(f"Model Type: {config.MODEL_TYPE}")
         print(f"Model Name: {config.MODEL_NAME}")
         print(f"Number of Labels: {num_labels}")
