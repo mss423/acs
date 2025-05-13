@@ -15,6 +15,7 @@ from downsampling import apply_downsampling
 
 # Import simpletransformers
 from simpletransformers.classification import ClassificationModel
+from simpletransformers.ner import NERArgs, NERModel
 from sklearn.model_selection import train_test_split # For creating validation set if needed
 from sklearn.metrics import classification_report, accuracy_score, f1_score # For evaluation
 
