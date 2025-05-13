@@ -61,8 +61,6 @@ def build_graph(cos_sim, sim_thresh=0.0, max_degree=None, labels=None):
         for j, similarity in neighbors:
             if j == i:
                 continue
-            # if max_degree and added_edges >= max_degree:
-            #     break  # Exit the inner loop if max_degree is reached
             if similarity >= sim_thresh and (labels is None or labels[i] == labels[j]):
                 G.add_edge(i, j, weight=similarity)
 
@@ -101,7 +99,7 @@ def max_cover_sampling(graph, k):
       if not nodes:
         break
       max_cover_node = max([node for node in nodes if node not in covered_nodes], key=lambda n: len(set(graph.neighbors(n)) - covered_nodes))
-      print(f"Selected node has degree {len(set(graph.neighbors(max_cover_node))-covered_nodes)}")
+      # print(f"Selected node has degree {len(set(graph.neighbors(max_cover_node))-covered_nodes)}")
       selected_nodes.add(max_cover_node)
       covered_nodes.update(graph.neighbors(max_cover_node))
 
@@ -157,9 +155,9 @@ def binary_similarity_search(data, num_samples, coverage, max_degree=None, epsil
             sim_lower = sim
         sim = (sim_upper + sim_lower) / 2
         # DEBUG
-        # print("  ! ============== DEBUG ============== ! ")
-        # print(f" ! === No Samples = {len(samples)} === !")
-        # print(f" ! == Coverage = {current_coverage} == ! ")
+        print("  ! ============== DEBUG ============== ! ")
+        print(f" ! === No Samples = {len(samples)} === !")
+        print(f" ! == Coverage = {current_coverage} == ! ")
 
     print(f"Completed with similarity threshold = {sim/1000}")
     return sim / 1000, node_graph, samples, current_coverage
