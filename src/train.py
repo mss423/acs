@@ -134,12 +134,14 @@ def train(
     if eval_df is not None and not eval_df.empty:
         print("\n--- Evaluating Model on Provided Eval Set ---")
         try:
-            if num_labels > 2:
+            if num_labels == 64:
                 result, model_outputs, wrong_predictions = model.eval_model(
                     eval_df,
-                    report=classification_report, # Pass function for detailed report
-                    # acc=lambda y_true, y_pred: accuracy_score(y_true, y_pred, average='weighted'),
-                    # f1=lambda y_true, y_pred: f1_score(y_true, y_pred, average='weighted')
+                    report=classification_report
+                )
+            if num_labels == 16:
+                result, model_outputs, wrong_predictions = model.eval_model(
+                    eval_df
                 )
             else:
                 result, model_outputs, wrong_predictions = model.eval_model(
