@@ -153,22 +153,7 @@ def sample_kmeans(
     if embed_data is None:
         print("Computing embeddings for K-Means...")
         embed_data = get_embeddings_task(data['sentence'].tolist()) # Assuming 'sentence' column exists based on usage in sample_acs
-        # Note: sample_acs used data['sentence'], but apply_downsampling dummy data uses 'sentence'. 
-        # Checking sample_acs again, it uses data['sentence']. 
-        # Let's check the dummy data in main: 'sentence'. 
-        # I should probably try 'sentence' first, then 'sentence'.
-        # Actually, let's look at sample_acs implementation in the file content I read earlier.
-        # Line 126: cos_sim = cosine_similarity(get_embeddings_task(data['sentence']))
-        # But dummy data has 'sentence'. This suggests a potential inconsistency or 'sentence' is expected in real data.
-        # I'll try to use 'sentence' as default, fallback to 'sentence' if needed, or just use 'sentence' as per apply_downsampling docstring.
-        # apply_downsampling docstring says: "data (pd.DataFrame): The input DataFrame (expected to have 'sentence' and 'labels')."
-        # So I will use 'sentence'.
 
-    if embed_data is None and 'sentence' in data.columns:
-         embed_data = get_embeddings_task(data['sentence'].tolist())
-    elif embed_data is None and 'sentence' in data.columns:
-         embed_data = get_embeddings_task(data['sentence'].tolist())
-    
     if embed_data is None:
         raise ValueError("Could not find 'text' or 'sentence' column for embeddings.")
 
@@ -214,13 +199,8 @@ def sample_dedup(
 
     # Get embeddings
     embed_data = kwargs.get('embed_data', None)
-    if embed_data is None:
-        if 'text' in data.columns:
-             embed_data = np.array(get_embeddings_task(data['text'].tolist()))
-        elif 'sentence' in data.columns:
-             embed_data = np.array(get_embeddings_task(data['sentence'].tolist()))
-        else:
-             raise ValueError("Could not find 'text' or 'sentence' column for embeddings.")
+    if embed_data is None and 'sentence' in data.columns:
+        embed_data = np.array(get_embeddings_task(data['sentence'].tolist()))
     else:
         embed_data = np.array(embed_data)
 
