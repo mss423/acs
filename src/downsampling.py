@@ -152,20 +152,20 @@ def sample_kmeans(
     embed_data = kwargs.get('embed_data', None)
     if embed_data is None:
         print("Computing embeddings for K-Means...")
-        embed_data = get_embeddings_task(data['text'].tolist()) # Assuming 'text' column exists based on usage in sample_acs
-        # Note: sample_acs used data['sentence'], but apply_downsampling dummy data uses 'text'. 
+        embed_data = get_embeddings_task(data['sentence'].tolist()) # Assuming 'sentence' column exists based on usage in sample_acs
+        # Note: sample_acs used data['sentence'], but apply_downsampling dummy data uses 'sentence'. 
         # Checking sample_acs again, it uses data['sentence']. 
-        # Let's check the dummy data in main: 'text'. 
-        # I should probably try 'text' first, then 'sentence'.
+        # Let's check the dummy data in main: 'sentence'. 
+        # I should probably try 'sentence' first, then 'sentence'.
         # Actually, let's look at sample_acs implementation in the file content I read earlier.
         # Line 126: cos_sim = cosine_similarity(get_embeddings_task(data['sentence']))
-        # But dummy data has 'text'. This suggests a potential inconsistency or 'sentence' is expected in real data.
-        # I'll try to use 'text' as default, fallback to 'sentence' if needed, or just use 'text' as per apply_downsampling docstring.
-        # apply_downsampling docstring says: "data (pd.DataFrame): The input DataFrame (expected to have 'text' and 'labels')."
-        # So I will use 'text'.
+        # But dummy data has 'sentence'. This suggests a potential inconsistency or 'sentence' is expected in real data.
+        # I'll try to use 'sentence' as default, fallback to 'sentence' if needed, or just use 'sentence' as per apply_downsampling docstring.
+        # apply_downsampling docstring says: "data (pd.DataFrame): The input DataFrame (expected to have 'sentence' and 'labels')."
+        # So I will use 'sentence'.
 
-    if embed_data is None and 'text' in data.columns:
-         embed_data = get_embeddings_task(data['text'].tolist())
+    if embed_data is None and 'sentence' in data.columns:
+         embed_data = get_embeddings_task(data['sentence'].tolist())
     elif embed_data is None and 'sentence' in data.columns:
          embed_data = get_embeddings_task(data['sentence'].tolist())
     
@@ -400,7 +400,7 @@ def apply_downsampling(
 if __name__ == '__main__':
     # Create dummy data
     dummy_data = {
-        'text': [f'Sentence {i}' for i in range(20)],
+        'sentence': [f'Sentence {i}' for i in range(20)],
         'labels': ([0] * 10) + ([1] * 10) # Balanced labels
     }
     dummy_df = pd.DataFrame(dummy_data)
