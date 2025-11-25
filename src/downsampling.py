@@ -9,7 +9,8 @@ import pickle
 # Optional: Import if your stratified implementation needs it
 # from sklearn.model_selection import train_test_split
 
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics.pairwise import cosine_similarity, pairwise_distances_argmin_min
+from sklearn.cluster import KMeans
 import numpy as np
 
 # --- Placeholder Sampling Functions ---
@@ -132,12 +133,185 @@ def sample_acs(
     return data.iloc[selected_samples]
 
 
+def sample_kmeans(
+    data: pd.DataFrame,
+    k_samples: int,
+    **kwargs
+) -> pd.DataFrame:
+    """
+    Samples k points from the data via K-Means clustering.
+    Selects the point closest to the centroid of each cluster.
+    """
+    print(f"--> Called sample_kmeans with k_samples={k_samples}")
+    
+    if k_samples > len(data):
+        print(f"Warning: Requested sample size ({k_samples}) is larger than the data size ({len(data)}). Returning original data.")
+        return data.copy()
+
+    # Get embeddings
+    embed_data = kwargs.get('embed_data', None)
+    if embed_data is None:
+        print("Computing embeddings for K-Means...")
+        embed_data = get_embeddings_task(data['text'].tolist()) # Assuming 'text' column exists based on usage in sample_acs
+        # Note: sample_acs used data['sentence'], but apply_downsampling dummy data uses 'text'. 
+        # Checking sample_acs again, it uses data['sentence']. 
+        # Let's check the dummy data in main: 'text'. 
+        # I should probably try 'text' first, then 'sentence'.
+        # Actually, let's look at sample_acs implementation in the file content I read earlier.
+        # Line 126: cos_sim = cosine_similarity(get_embeddings_task(data['sentence']))
+        # But dummy data has 'text'. This suggests a potential inconsistency or 'sentence' is expected in real data.
+        # I'll try to use 'text' as default, fallback to 'sentence' if needed, or just use 'text' as per apply_downsampling docstring.
+        # apply_downsampling docstring says: "data (pd.DataFrame): The input DataFrame (expected to have 'text' and 'labels')."
+        # So I will use 'text'.
+
+    if embed_data is None and 'text' in data.columns:
+         embed_data = get_embeddings_task(data['text'].tolist())
+    elif embed_data is None and 'sentence' in data.columns:
+         embed_data = get_embeddings_task(data['sentence'].tolist())
+    
+    if embed_data is None:
+        raise ValueError("Could not find 'text' or 'sentence' column for embeddings.")
+
+    # Run K-Means
+    kmeans = KMeans(n_clusters=k_samples, random_state=kwargs.get('random_state', 42), n_init=10)
+    kmeans.fit(embed_data)
+    
+    # Find closest points to centroids
+    closest_indices, _ = pairwise_distances_argmin_min(kmeans.cluster_centers_, embed_data)
+    
+    # closest_indices might contain duplicates if k is large relative to N or data is weird, but usually unique for distinct centroids.
+    # If duplicates, we might get fewer than k samples.
+    unique_indices = np.unique(closest_indices)
+    
+    # If we lost some due to duplicates (rare), fill up with random
+    if len(unique_indices) < k_samples:
+        remaining_indices = list(set(range(len(data))) - set(unique_indices))
+        needed = k_samples - len(unique_indices)
+        if needed > 0 and remaining_indices:
+             # simple random fill
+             import random
+             random.seed(kwargs.get('random_state', 42))
+             fill_indices = random.sample(remaining_indices, min(needed, len(remaining_indices)))
+             unique_indices = np.concatenate([unique_indices, fill_indices])
+
+    return data.iloc[unique_indices]
+
+
+def sample_dedup(
+    data: pd.DataFrame,
+    k_samples: int,
+    **kwargs
+) -> pd.DataFrame:
+    """
+    Samples the dataset down to k points using a deduplication strategy (SemDeDup-like).
+    Clustering -> Sort by distance to centroid -> Prune by similarity.
+    """
+    print(f"--> Called sample_dedup with k_samples={k_samples}")
+
+    if k_samples > len(data):
+        print(f"Warning: Requested sample size ({k_samples}) is larger than the data size ({len(data)}). Returning original data.")
+        return data.copy()
+
+    # Get embeddings
+    embed_data = kwargs.get('embed_data', None)
+    if embed_data is None:
+        if 'text' in data.columns:
+             embed_data = np.array(get_embeddings_task(data['text'].tolist()))
+        elif 'sentence' in data.columns:
+             embed_data = np.array(get_embeddings_task(data['sentence'].tolist()))
+        else:
+             raise ValueError("Could not find 'text' or 'sentence' column for embeddings.")
+    else:
+        embed_data = np.array(embed_data)
+
+    # Parameters
+    sim_threshold = kwargs.get('dedup_sim_threshold', 0.9) # Threshold for deduplication
+    
+    # 1. Cluster
+    # We use a number of clusters. If k_samples is small, maybe use k_samples. 
+    # If k_samples is large, we still want to group similar items.
+    # Let's use k_samples as the number of clusters for simplicity, 
+    # assuming we want to pick representatives from these "topics".
+    # Or we can use a higher number to get finer granularity.
+    # Let's stick to k_samples for now to align with "sampling k points".
+    n_clusters = k_samples 
+    # Ensure n_clusters is not > len(data)
+    n_clusters = min(n_clusters, len(data))
+    
+    kmeans = KMeans(n_clusters=n_clusters, random_state=kwargs.get('random_state', 42), n_init=10)
+    cluster_labels = kmeans.fit_predict(embed_data)
+    
+    kept_indices = []
+    
+    # 2. Process each cluster
+    for i in range(n_clusters):
+        cluster_mask = (cluster_labels == i)
+        cluster_indices = np.where(cluster_mask)[0]
+        
+        if len(cluster_indices) == 0:
+            continue
+            
+        # Get embeddings for this cluster
+        cluster_embeddings = embed_data[cluster_indices]
+        centroid = kmeans.cluster_centers_[i]
+        
+        # Sort by distance to centroid (ascending) - keep most representative first
+        # distance to centroid
+        dists = np.linalg.norm(cluster_embeddings - centroid, axis=1)
+        sorted_local_idx = np.argsort(dists)
+        sorted_global_idx = cluster_indices[sorted_local_idx]
+        
+        # 3. Prune
+        cluster_kept = []
+        cluster_kept_embeddings = []
+        
+        for idx in sorted_global_idx:
+            emb = embed_data[idx]
+            if not cluster_kept:
+                cluster_kept.append(idx)
+                cluster_kept_embeddings.append(emb)
+            else:
+                # Check similarity with already kept
+                # We can use matrix multiplication for speed
+                sims = cosine_similarity([emb], cluster_kept_embeddings)[0]
+                if np.max(sims) < sim_threshold:
+                    cluster_kept.append(idx)
+                    cluster_kept_embeddings.append(emb)
+        
+        kept_indices.extend(cluster_kept)
+        
+    # 4. Final check on size
+    if len(kept_indices) > k_samples:
+        # Randomly sample from the kept ones
+        import random
+        random.seed(kwargs.get('random_state', 42))
+        final_indices = random.sample(kept_indices, k_samples)
+    elif len(kept_indices) < k_samples:
+        # We over-pruned. Fill back up from the discarded ones?
+        # Or just return what we have? 
+        # The function contract says "k_samples".
+        # Let's fill up from the original data excluding kept_indices.
+        print(f"  Dedup resulted in {len(kept_indices)} samples, filling up to {k_samples} with random samples.")
+        remaining = list(set(range(len(data))) - set(kept_indices))
+        needed = k_samples - len(kept_indices)
+        import random
+        random.seed(kwargs.get('random_state', 42))
+        fill = random.sample(remaining, min(needed, len(remaining)))
+        final_indices = kept_indices + fill
+    else:
+        final_indices = kept_indices
+
+    return data.iloc[final_indices]
+
+
 # --- Mapping from method names to functions ---
 # The user's custom functions should be added or replace placeholders here.
 SAMPLING_FUNCTIONS: Dict[str, Callable[..., pd.DataFrame]] = {
     "random": sample_random,
     "acs": sample_acs,
-    "score": sample_score
+    "score": sample_score,
+    "kmeans": sample_kmeans,
+    "dedup": sample_dedup
     # "custom": sample_custom_method,
 }
 
