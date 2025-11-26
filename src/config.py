@@ -153,4 +153,12 @@ FEWREL_LABELS = [
     "P991",
 ]
 
+# --- Dataset Configuration ---
+DATASET_CONFIG = {
+    'train_path': str(RAW_DATA_DIR / 'SST2'),
+    'test_path': str(RAW_DATA_DIR / 'SST2'),
+    # 'text_col': 'sentence', # SST2 loader handles this internally usually, but good to have if using generic loader
+    # 'label_col': 'label'
+}
+
 print("Configuration loaded.")

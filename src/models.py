@@ -12,7 +12,8 @@ from transformers import (
     AlbertForSequenceClassification, 
     XLNetForSequenceClassification, 
     RobertaForSequenceClassification, 
-    AutoTokenizer
+    AutoTokenizer,
+    AutoModelForSequenceClassification
 )
 
 
@@ -95,5 +96,88 @@ class XlnetModel(nn.Module):
     def forward(self, batch_seqs, batch_seq_masks, batch_seq_segments, labels):
         loss, logits = self.xlnet(input_ids = batch_seqs, attention_mask = batch_seq_masks, 
                               token_type_ids=batch_seq_segments, labels = labels)[:2]
+        probabilities = nn.functional.softmax(logits, dim=-1)
+        return loss, logits, probabilities
+
+
+class LlamaModel(nn.Module):
+    def __init__(self, model_name='meta-llama/Meta-Llama-3-8B', requires_grad=True):
+        super(LlamaModel, self).__init__()
+        self.model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        
+        # Handle missing pad token which is common in LLMs
+        if self.tokenizer.pad_token is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+            self.model.config.pad_token_id = self.model.config.eos_token_id
+            
+        self.requires_grad = requires_grad
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        for param in self.model.parameters():
+            param.requires_grad = requires_grad
+
+    def forward(self, batch_seqs, batch_seq_masks, batch_seq_segments, labels):
+        # LLMs typically don't use token_type_ids (batch_seq_segments)
+        outputs = self.model(
+            input_ids=batch_seqs.to(self.device),
+            attention_mask=batch_seq_masks.to(self.device),
+            labels=labels.to(self.device)
+        )
+        loss = outputs.loss
+        logits = outputs.logits
+        probabilities = nn.functional.softmax(logits, dim=-1)
+        return loss, logits, probabilities
+
+
+class QwenModel(nn.Module):
+    def __init__(self, model_name='Qwen/Qwen2-7B', requires_grad=True):
+        super(QwenModel, self).__init__()
+        self.model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2, trust_remote_code=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+        
+        if self.tokenizer.pad_token is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+            self.model.config.pad_token_id = self.model.config.eos_token_id
+
+        self.requires_grad = requires_grad
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        for param in self.model.parameters():
+            param.requires_grad = requires_grad
+
+    def forward(self, batch_seqs, batch_seq_masks, batch_seq_segments, labels):
+        outputs = self.model(
+            input_ids=batch_seqs.to(self.device),
+            attention_mask=batch_seq_masks.to(self.device),
+            labels=labels.to(self.device)
+        )
+        loss = outputs.loss
+        logits = outputs.logits
+        probabilities = nn.functional.softmax(logits, dim=-1)
+        return loss, logits, probabilities
+
+
+class GemmaModel(nn.Module):
+    def __init__(self, model_name='google/gemma-7b', requires_grad=True):
+        super(GemmaModel, self).__init__()
+        self.model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        
+        if self.tokenizer.pad_token is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+            self.model.config.pad_token_id = self.model.config.eos_token_id
+
+        self.requires_grad = requires_grad
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        for param in self.model.parameters():
+            param.requires_grad = requires_grad
+
+    def forward(self, batch_seqs, batch_seq_masks, batch_seq_segments, labels):
+        outputs = self.model(
+            input_ids=batch_seqs.to(self.device),
+            attention_mask=batch_seq_masks.to(self.device),
+            labels=labels.to(self.device)
+        )
+        loss = outputs.loss
+        logits = outputs.logits
         probabilities = nn.functional.softmax(logits, dim=-1)
         return loss, logits, probabilities

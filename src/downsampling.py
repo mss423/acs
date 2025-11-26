@@ -296,6 +296,36 @@ SAMPLING_FUNCTIONS: Dict[str, Callable[..., pd.DataFrame]] = {
 }
 
 
+def get_or_compute_embeddings(data: pd.DataFrame, dataset_name: Optional[str] = None) -> np.ndarray:
+    """
+    Retrieves embeddings from cache if available, otherwise computes and caches them.
+    """
+    embed_file = None
+    if dataset_name:
+        embed_file = config.PROCESSED_DATA_DIR / f"{dataset_name}_train_embed.pkl"
+        if embed_file.exists():
+            print(f"Loading pre-computed embeddings from {embed_file}...")
+            with open(embed_file, "rb") as f:
+                return pickle.load(f)
+
+    print("Computing embeddings...")
+    if 'sentence' in data.columns:
+        texts = data['sentence'].tolist()
+    elif 'text' in data.columns:
+        texts = data['text'].tolist()
+    else:
+        raise ValueError("Could not find 'sentence' or 'text' column for embeddings.")
+    
+    embeddings = get_embeddings_task(texts)
+    
+    if embed_file:
+        print(f"Saving embeddings to {embed_file}...")
+        with open(embed_file, "wb") as f:
+            pickle.dump(embeddings, f)
+            
+    return embeddings
+
+
 # --- Main Dispatcher Function ---
 def apply_downsampling(
     data: pd.DataFrame,
@@ -303,6 +333,7 @@ def apply_downsampling(
     target_size: Optional[int] = None,
     random_seed: Optional[int] = None,
     label_col: str = 'labels', # Default label column for stratified
+    dataset_name: Optional[str] = None,
     **sampling_args
 ) -> pd.DataFrame:
     """
@@ -318,6 +349,7 @@ def apply_downsampling(
         random_seed (Optional[int], optional): Seed for reproducibility. Defaults to None.
         label_col (str, optional): The column name containing labels, primarily
                                    used for 'stratified' sampling. Defaults to 'labels'.
+        dataset_name (Optional[str]): Name of the dataset, used for caching embeddings.
 
     Returns:
         pd.DataFrame: The downsampled DataFrame, or the original DataFrame if
@@ -349,6 +381,17 @@ def apply_downsampling(
     if method not in SAMPLING_FUNCTIONS:
         raise ValueError(f"Unknown downsampling method: '{method}'. Available methods: {list(SAMPLING_FUNCTIONS.keys())}")
 
+    # Pre-compute/Load embeddings if the method needs them
+    # Methods that typically need embeddings: kmeans, dedup, acs
+    # We can pass them to all, or check method name. 
+    # Passing to all is safer if they just ignore unused kwargs.
+    # But we don't want to compute if not needed (e.g. random).
+    
+    methods_needing_embeddings = ['kmeans', 'dedup', 'acs']
+    embed_data = None
+    if method in methods_needing_embeddings:
+        embed_data = get_or_compute_embeddings(data, dataset_name)
+
     # Get the appropriate sampling function
     sampling_func = SAMPLING_FUNCTIONS[method]
 
@@ -357,6 +400,7 @@ def apply_downsampling(
         'k_samples': target_size,
         'random_state': random_seed,
         'label_col': label_col,
+        'embed_data': embed_data, # Pass embeddings explicitly
         **sampling_args
     }
 

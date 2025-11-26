@@ -1,0 +1,2 @@
+method,fraction,k_samples,seed,error
+random,0.1,600,42,cannot access local variable 'result' where it is not associated with a value

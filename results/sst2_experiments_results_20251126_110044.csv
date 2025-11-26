@@ -1,0 +1,2 @@
+method,fraction,k_samples,seed,train_size,accuracy,eval_loss
+random,0.1,600,42,600,0.9,0.1
