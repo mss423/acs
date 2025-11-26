@@ -1,9 +1,10 @@
 # init the vertexai package
-import vertexai
+# import vertexai
 # Load the text embeddings model
-from vertexai.language_models import TextEmbeddingModel, TextEmbeddingInput
+# from vertexai.language_models import TextEmbeddingModel, TextEmbeddingInput
 from tqdm import tqdm
 import time
+from sentence_transformers import SentenceTransformer
 
 # ACS packages
 import networkx as nx
@@ -12,15 +13,15 @@ from tqdm import tqdm
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-LOCATION = "us-central1"
-PROJECT_ID = "synthetic-data-432701"
+# LOCATION = "us-central1"
+# PROJECT_ID = "synthetic-data-432701"
 
 # Embedding Function
 def get_embeddings_task(texts, task='CLUSTERING', batch_size=32):
     '''
     Get embeddings for a list of texts with a specific task
     task = ;'CLUSTERING' or 'SEMANTIC_SIMILARITY'
-    '''
+
     vertexai.init(project=PROJECT_ID, location=LOCATION)
     model = TextEmbeddingModel.from_pretrained("text-embedding-004")
 
@@ -29,6 +30,18 @@ def get_embeddings_task(texts, task='CLUSTERING', batch_size=32):
         inputs = [TextEmbeddingInput(text, task) for text in texts[i : i + batch_size]]
         batch_embs = model.get_embeddings(inputs)
         embs.extend([embedding.values for embedding in batch_embs])
+    return embs
+    COMMENTED OUT THE ABOVE TO CIRCUMVENT GECKO
+    '''
+
+    # Load local model (efficient and good quality)
+    # You can change this to 'all-mpnet-base-v2' for better quality but slower speed
+    model = SentenceTransformer('all-MiniLM-L6-v2') 
+    
+    # Encode
+    # show_progress_bar=True by default in encode, but we can control it
+    embs = model.encode(texts, batch_size=batch_size, show_progress_bar=True)
+    
     return embs
 
 # ACS Execution

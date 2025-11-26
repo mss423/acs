@@ -13,10 +13,9 @@
 # Ensure logs directory exists
 mkdir -p logs
 
-# Activate environment (User should adjust this if needed)
-# source activate acs_env 
-# OR
-# module load python/3.8 cuda/11.0
+# Activate environment
+module load anaconda3/2024.2
+conda activate acs_env
 
 echo "Starting SST2 ACS Experiments"
 echo "Job ID: $SLURM_JOB_ID"
